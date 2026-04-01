@@ -1,0 +1,37 @@
+\documentclass[10pt]{article}
+\usepackage{xeCJK}
+\xeCJKsetup{CJKecglue={\hspace{0.1em}}}
+\usepackage[a4paper, top=20.4mm, bottom=20.4mm, left=22mm, right=22mm]{geometry}
+\usepackage{titlesec}
+\usepackage{zhnumber}
+\usepackage{graphicx}
+\usepackage{setspace} 
+\usepackage{color}
+\usepackage{subcaption}
+\usepackage{tabularx}
+\usepackage{changepage}
+\usepackage{tabularx, array}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{enumitem}
+\usepackage{extarrows}
+\usepackage{bm}
+\setlength{\jot}{6pt}
+\setlist[enumerate,1]{label=(\arabic*)}
+\newCJKfontfamily\CJKrm{標楷體}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{0.2em}{}
+\titleformat{\subsection}{\large\normalfont}{\thesubsection}{0.5em}{}
+\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesection}{\zhnum{section}、}
+\xeCJKsetup{AutoFakeBold=true, AutoFakeSlant=true}
+\setCJKmainfont{標楷體}
+\begin{document}
+hello world
+
+\end{document}
