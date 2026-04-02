@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.4)  2 APR 2026 11:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.4)  2 APR 2026 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,12 +739,12 @@ Package rerunfilecheck Info: File `latex.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20743 strings out of 403246
- 468505 string characters out of 5465128
- 912726 words of memory out of 5000000
- 49022 multiletter control sequences out of 15000+600000
+ 20722 strings out of 403246
+ 467277 string characters out of 5465128
+ 904724 words of memory out of 5000000
+ 49001 multiletter control sequences out of 15000+600000
  631010 words of font info for 61 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 74i,6n,92p,312b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,5n,92p,312b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on latex.pdf (2 pages).
