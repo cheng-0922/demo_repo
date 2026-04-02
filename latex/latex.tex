@@ -32,6 +32,30 @@
 \xeCJKsetup{AutoFakeBold=true, AutoFakeSlant=true}
 \setCJKmainfont{標楷體}
 \begin{document}
+
+\begin{center}
+
+    \begin{minipage}{0.65\textwidth}
+        \centering
+        {\Large \bfseries 第15屆普通物理實驗創意設計競賽}\\[0.2cm]
+        {\Large \bfseries 實驗摘要}
+    \end{minipage}
+
+\end{center}
+
+\vspace{0.5cm}
+
+% 隊伍與作品名稱表格
+\begin{tabularx}{\textwidth}{|p{2.5cm}|Y|}
+    \hline
+    \rule{0pt}{25pt} 隊伍名稱 & （在此輸入隊名，如：哈根達斯的拉格朗日量） \\ \hline
+    \rule{0pt}{25pt} 作品名稱 & 流體附加質量對單擺動力學行為之影響——兼論物體密度之非破壞性量測 \\ \hline
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{|X|}
+
 \begin{spacing}{1.3}
 \section{原理}
 \subsection{理想流體中運動推導}對於一個在理想流體中平移的理想球體，其附加質量為排開流體質量的一半：
@@ -70,8 +94,9 @@ $$\omega_d = \sqrt{\omega_0'^2 - \gamma^2}$$
 
 在低黏滯流體（如水）且阻尼不大的假設下 ($\gamma \ll \omega_0'$)，水中的擺動週期 $T_{\text{water}}$ 近似為：
 $$T_{\text{water}} \approx \frac{2\pi}{\omega_0'} = 2\pi \sqrt{ \frac{(\rho + C_m \rho_w)L}{(\rho - \rho_w)g} }$$
-
-
+\end{tabularx}
+\newpage
+\begin{tabularx}{\textwidth}{|X|}
 \subsection{理想無阻尼近似下的 $C_m$ 推導 (Ideal Undamped Approximation)}
 
 考慮最基礎的情況（忽略流體黏滯性造成的週期偏移）。
@@ -95,4 +120,5 @@ $$T^2_{\text{water}}= \frac{\rho + C_m \rho_w}{\rho - \rho_w}T^2_{\text{air}}$$
 \section{預期結果}
 本實驗預計能求出球體、圓柱體及正方體三種不同形狀擺錘在水中做單擺運動時，周圍水體造成的附加質量。在水中單擺受黏滯力影響，阻尼現象較明顯，振幅可能會快速的衰減。且實際週期應較理想無阻尼情況稍大，可能會使實驗得出的附加質量略微大於實際附加質量。
 \end{spacing}
+\end{tabularx}
 \end{document}
