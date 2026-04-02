@@ -1,0 +1,138 @@
+\begin{thebibliography}{24}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\def\au#1{#1} \def\ed#1{#1} \def\yr#1{#1}\def\at#1{#1}\def\jt#1{\textit{#1}}
+  \def\bt#1{#1}\def\bvol#1{\textbf{#1}} \def\vol#1{#1} \def\pg#1{#1}
+  \def\publ#1{#1}\def\arxiv#1{#1}\def\org#1{#1}\def\st#1{\textit{#1}}
+
+\bibitem[Alm{\'e}ras {\em et~al.\/}(2017)Alm{\'e}ras, Mathai, Lohse \&
+  Sun]{almeras2017experimental}
+{\sc \au{Alm{\'e}ras, Elise}, \au{Mathai, Varghese}, \au{Lohse, Detlef} \&
+  \au{Sun, Chao}} \yr{2017}  \at{Experimental investigation of the turbulence
+  induced by a bubble swarm rising within incident turbulence}.  \jt{J. Fluid
+  Mech.}  \bvol{825},  \pg{1091--1112}.
+
+\bibitem[Bagchi \& Balachandar(2004)]{bagchi2004response}
+{\sc \au{Bagchi, Prosenjit} \& \au{Balachandar, S}} \yr{2004}  \at{Response of
+  the wake of an isolated particle to an isotropic turbulent flow}.  \jt{J.
+  Fluid Mech.}  \bvol{518},  \pg{95--123}.
+
+\bibitem[Batchelor(2000)]{batchelor2000introduction}
+{\sc \au{Batchelor, G.~K.}} \yr{2000} {\em An introduction to fluid
+  dynamics\/}.  \publ{Cambridge university press}.
+
+\bibitem[Bolster {\em et~al.\/}(2010)Bolster, Hershberger \&
+  Donnelly]{bolster2010oscillating}
+{\sc \au{Bolster, D.}, \au{Hershberger, R.~E.} \& \au{Donnelly, R.~J.}}
+  \yr{2010}  \at{Oscillating pendulum decay by emission of vortex rings}.
+  \jt{Phys. Rev. E}  \bvol{81}~(4),  \pg{046317}.
+
+\bibitem[Dong(1978)]{dong1978effective}
+{\sc \au{Dong, RG}} \yr{1978}  \bt{Effective mass and damping of submerged
+  structures}. {\em Tech. Rep.\/}.  \org{California Univ., Livermore (USA).
+  Lawrence Livermore Lab.}
+
+\bibitem[Govardhan \& Williamson(2000)]{govardhan2000modes}
+{\sc \au{Govardhan, R} \& \au{Williamson, C. H.~K.}} \yr{2000}  \at{Modes of
+  vortex formation and frequency response of a freely vibrating cylinder}.
+  \jt{J. Fluid Mech.}  \bvol{420},  \pg{85--130}.
+
+\bibitem[Govardhan \& Williamson(2005)]{govardhan2005vortex}
+{\sc \au{Govardhan, R.~N.} \& \au{Williamson, C.~H.~K.}} \yr{2005}
+  \at{Vortex-induced vibrations of a sphere}.  \jt{J. Fluid Mech.}  \bvol{531},
+   \pg{11--47}.
+
+\bibitem[Hoerner(1965)]{hoerner1965fluid}
+{\sc \au{Hoerner, Sighard~F}} \yr{1965} {\em Fluid-dynamic drag: practical
+  information on aerodynamic drag and hydrodynamic resistance\/}.
+  \publ{Hoerner Fluid Dynamics}.
+
+\bibitem[Huygens(1986)]{huygens1986christiaan}
+{\sc \au{Huygens, C.}} \yr{1986} {\em Christiaan Huygens' the pendulum clock,
+  or, Geometrical demonstrations concerning the motion of pendula as applied to
+  clocks\/}.  \publ{Iowa State Pr}.
+
+\bibitem[Konstantinidis(2013)]{konstantinidis2013added}
+{\sc \au{Konstantinidis, Efstathios}} \yr{2013}  \at{Added mass of a circular
+  cylinder oscillating in a free stream}.  \jt{Proc. R. Soc. A}
+  \bvol{469}~(2156),  \pg{20130135}.
+
+\bibitem[Koo \& Kim(2015)]{koo2015simplified}
+{\sc \au{Koo, Weoncheol} \& \au{Kim, Jun-Dong}} \yr{2015}  \at{Simplified
+  formulas of heave added mass coefficients at high frequency for various
+  two-dimensional bodies in a finite water depth}.  \jt{International Journal
+  of Naval Architecture and Ocean Engineering}  \bvol{7}~(1),  \pg{115--127}.
+
+\bibitem[Lienhard(1966)]{lienhard1966synopsis}
+{\sc \au{Lienhard, J.~H.}} \yr{1966} {\em Synopsis of lift, drag, and vortex
+  frequency data for rigid circular cylinders\/}, ,  \vol{vol. 300}.
+  \publ{Technical Extension Service, Washington State University}.
+
+\bibitem[Mathai {\em et~al.\/}(2016)Mathai, Calzavarini, Brons, Sun \&
+  Lohse]{mathai2016microbubbles}
+{\sc \au{Mathai, V.}, \au{Calzavarini, E.}, \au{Brons, J.}, \au{Sun, C.} \&
+  \au{Lohse, D.}} \yr{2016}  \at{Microbubbles and microparticles are not
+  faithful tracers of turbulent acceleration}.  \jt{Phys. Rev. Lett.}
+  \bvol{117}~(2),  \pg{024501}.
+
+\bibitem[Mathai {\em et~al.\/}(2015)Mathai, Prakash, Brons, Sun \&
+  Lohse]{mathai2015wake}
+{\sc \au{Mathai, V.}, \au{Prakash, V.~N.}, \au{Brons, J.}, \au{Sun, C.} \&
+  \au{Lohse, D.}} \yr{2015}  \at{Wake-driven dynamics of finite-sized buoyant
+  spheres in turbulence}.  \jt{Phys. Rev. Lett.}  \bvol{115}~(12),
+  \pg{124501}.
+
+\bibitem[Mathai {\em et~al.\/}(2017)Mathai, Zhu, Sun \& Lohse]{mathai2017mass}
+{\sc \au{Mathai, Varghese}, \au{Zhu, Xiaojue}, \au{Sun, Chao} \& \au{Lohse,
+  Detlef}} \yr{2017}  \at{Mass and moment of inertia govern the transition in
+  the dynamics and wakes of freely rising and falling cylinders}.  \jt{Phys.
+  Rev. Lett.}  \bvol{119}~(5),  \pg{054501}.
+
+\bibitem[Mathai {\em et~al.\/}(2018)Mathai, Zhu, Sun \&
+  Lohse]{mathai2018flutter}
+{\sc \au{Mathai, Varghese}, \au{Zhu, Xiaojue}, \au{Sun, Chao} \& \au{Lohse,
+  Detlef}} \yr{2018}  \at{Flutter to tumble transition of buoyant spheres
+  triggered by rotational inertia changes}.  \jt{Nat. Commun.}  \bvol{9}~(1),
+  \pg{1792}.
+
+\bibitem[Mittal \& Iaccarino(2005)]{mittal2005immersed}
+{\sc \au{Mittal, R.} \& \au{Iaccarino, G.}} \yr{2005}  \at{Immersed boundary
+  methods}.  \jt{Annu. Rev. Fluid Mech.}  \bvol{37},  \pg{239--261}.
+
+\bibitem[Naso \& Prosperetti(2010)]{naso2010interaction}
+{\sc \au{Naso, A.} \& \au{Prosperetti, A.}} \yr{2010}  \at{The interaction
+  between a solid particle and a turbulent flow}.  \jt{New J. Phys.}
+  \bvol{12}~(3),  \pg{033040}.
+
+\bibitem[Neill {\em et~al.\/}(2007)Neill, Livelybrooks \&
+  Donnelly]{neill2007pendulum}
+{\sc \au{Neill, D.}, \au{Livelybrooks, D.} \& \au{Donnelly, R.~J.}} \yr{2007}
+  \at{A pendulum experiment on added mass and the principle of equivalence}.
+  \jt{Am. J. Phys.}  \bvol{75}~(3),  \pg{226--229}.
+
+\bibitem[Obligado {\em et~al.\/}(2013)Obligado, Puy \&
+  Bourgoin]{obligado2013bi}
+{\sc \au{Obligado, Martin}, \au{Puy, Martin} \& \au{Bourgoin, Micka{\"e}l}}
+  \yr{2013}  \at{Bi-stability of a pendular disk in laminar and turbulent
+  flows}.  \jt{J. Fluid Mech.}  \bvol{728}.
+
+\bibitem[Stokes(1851)]{stokes1851effect}
+{\sc \au{Stokes, G.~G.}} \yr{1851} {\em On the effect of the internal friction
+  of fluids on the motion of pendulums\/}.  \publ{Pitt Press Cambridge}.
+
+\bibitem[Tatsuno \& Bearman(1990)]{tatsuno1990visual}
+{\sc \au{Tatsuno, M} \& \au{Bearman, PW}} \yr{1990}  \at{A visual study of the
+  flow around an oscillating circular cylinder at low keulegan--carpenter
+  numbers and low stokes numbers}.  \jt{J. Fluid Mech.}  \bvol{211},
+  \pg{157--182}.
+
+\bibitem[Tatsuno \& Karasudani(1993)]{tatsuno1993wavy}
+{\sc \au{Tatsuno, M} \& \au{Karasudani, T}} \yr{1993}  \at{Wavy mode of the
+  streaked flow around an oscillating cylinder in a stratified fluid at rest}.
+  \jt{Fluid Dyna. Res.}  \bvol{11}~(6),  \pg{313}.
+
+\bibitem[Wu \& Faeth(1993)]{wu1993sphere}
+{\sc \au{Wu, J-S} \& \au{Faeth, GM}} \yr{1993}  \at{Sphere wakes in still
+  surroundings at intermediate reynolds numbers}.  \jt{AIAA journal}
+  \bvol{31}~(8),  \pg{1448--1455}.
+
+\end{thebibliography}

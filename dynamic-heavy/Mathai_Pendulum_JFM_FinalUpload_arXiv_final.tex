@@ -1,0 +1,829 @@
+
+% This is file JFM2esam.tex
+% first release v1.0, 20th October 1996
+%       release v1.01, 29th October 1996
+%       release v1.1, 25th June 1997
+%       release v2.0, 27th July 2004
+%       release v3.0, 16th July 2014
+%   (based on JFMsampl.tex v1.3 for LaTeX2.09)
+% Copyright (C) 1996, 1997, 2014 Cambridge University Press
+
+\documentclass{jfm}
+
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{epstopdf}
+\usepackage{upgreek}
+\usepackage{natbib}
+\usepackage{arydshln}
+\usepackage[T1]{fontenc}
+
+
+
+
+ 
+\usepackage{natbib}
+
+\usepackage{psfrag}
+\usepackage{color}
+\usepackage{graphicx,float,amssymb}
+
+
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{bm}
+\usepackage{amsmath}
+%\usepackage[mathcal]{euscript}
+
+%\newcommand{\bfO}{{\bf \Omega}}
+%\newcommand{\bfo}{{\bm \omega}}
+%\newcommand{\bfa}{{\bf a}}
+%\newcommand{\bfv}{{\bm v}}
+%\newcommand{\bfw}{{\bf w}}
+%\newcommand{\bff}{{\bf f}}
+%\newcommand{\bfz}{{\bf z}}
+%\newcommand{\bfk}{{\bf k}}
+%\newcommand{\bfx}{{\bf x}}
+%\newcommand{\bfy}{{\bf y}}
+%\newcommand{\bfu}{{\bf u}}
+%\newcommand{\bfS}{{\bf S}}
+%\newcommand{\bfR}{{\bf R}}
+%\newcommand{\bfX}{{\bf X}}
+%\newcommand{\bfU}{{\bf U}}
+%\newcommand{\bfe}{{\bf e}}
+%\newcommand{\cM}{{\mathcal M}}
+%\newcommand{\cI}{{\mathcal I}}
+%\newcommand{\cA}{{\mathcal A}}
+%\newcommand{\cL}{{\mathcal L}}
+%\newcommand{\cO}{{\mathcal O}}
+%\newcommand{\cS}{{\mathcal S}}
+%\newcommand{\cF}{{\mathcal F}}
+%\newcommand{\cW}{{\mathcal W}}
+%\newcommand{\bfs}{{\bf \sigma}}
+%\newcommand{\bfomega}{{\bf \omega}}
+%\newcommand{\bft}{{\bm \tau}}
+%\newcommand{\bfn}{{\bf n}}
+%\newcommand{\bfg}{{\bf g}}
+%\newcommand\iu{\operatorname{i}}
+%\newcommand{\bfxi}{{\bf \xi}}
+%
+
+\usepackage[colorlinks=false, bookmarks=true]{hyperref}
+
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{epstopdf, epsfig}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{epstopdf}
+\usepackage{upgreek}
+\usepackage{natbib}
+\usepackage{arydshln}
+\usepackage[T1]{fontenc}
+
+
+%\usepackage[colorlinks=true, bookmarks=true]{hyperref}
+
+
+ 
+\usepackage{natbib}
+
+\usepackage{psfrag}
+\usepackage{color}
+\usepackage{graphicx,float,amssymb}
+%\usepackage[bf,loose,normalsize,FIGTOPCAP]{subfigure}
+%\addtolength{\voffset}{0.0in}
+%\subfigcaptopadj=-10pt
+
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{bm}
+\usepackage{amsmath}
+%\usepackage[mathcal]{euscript}
+
+%\newcommand{\bfO}{{\bf \Omega}}
+%\newcommand{\bfo}{{\bm \omega}}
+%\newcommand{\bfa}{{\bf a}}
+%\newcommand{\bfv}{{\bm v}}
+%\newcommand{\bfw}{{\bf w}}
+%\newcommand{\bff}{{\bf f}}
+%\newcommand{\bfz}{{\bf z}}
+%\newcommand{\bfk}{{\bf k}}
+%\newcommand{\bfx}{{\bf x}}
+%\newcommand{\bfy}{{\bf y}}
+%\newcommand{\bfu}{{\bf u}}
+%\newcommand{\bfS}{{\bf S}}
+%\newcommand{\bfR}{{\bf R}}
+%\newcommand{\bfX}{{\bf X}}
+%\newcommand{\bfU}{{\bf U}}
+%\newcommand{\bfe}{{\bf e}}
+%\newcommand{\cM}{{\mathcal M}}
+%\newcommand{\cI}{{\mathcal I}}
+%\newcommand{\cA}{{\mathcal A}}
+%\newcommand{\cL}{{\mathcal L}}
+%\newcommand{\cO}{{\mathcal O}}
+%\newcommand{\cS}{{\mathcal S}}
+%\newcommand{\cF}{{\mathcal F}}
+%\newcommand{\cW}{{\mathcal W}}
+%\newcommand{\bfs}{{\bf \sigma}}
+%\newcommand{\bfomega}{{\bf \omega}}
+%\newcommand{\bft}{{\bm \tau}}
+%\newcommand{\bfn}{{\bf n}}
+%\newcommand{\bfg}{{\bf g}}
+%\newcommand\iu{\operatorname{i}}
+%\newcommand{\bfxi}{{\bf \xi}}
+%
+
+%\usepackage[colorlinks=false, bookmarks=true]{hyperref}
+
+
+\newcommand\ms{\nobreak\mbox{$\;$m\,s$^{-1}$}}
+\newcommand\epsunit{\nobreak\mbox{$\;$m$^2$\,s$^{-3}$}}
+%\newcommand{\etal}{\emph{et al.}}
+
+
+%below are commands from wake driven PRL
+
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{epstopdf}
+\usepackage{upgreek}
+\usepackage{natbib}
+\usepackage{arydshln}
+\usepackage[T1]{fontenc}
+
+%\newcommand\ms{\nobreak\mbox{$\;$m\,s$^{-1}$}}
+%\newcommand\epsunit{\nobreak\mbox{$\;$m$^2$\,s$^{-3}$}}
+
+
+
+%below are commands from wake driven PRL
+
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{epstopdf}
+\usepackage{upgreek}
+\usepackage{natbib}
+\usepackage{arydshln}
+\usepackage[T1]{fontenc}
+
+
+
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\shortauthor{Mathai, Loeffen, Chan, and Wildeman}
+
+\title{Dynamics of heavy and buoyant underwater pendulums}
+
+\author{Varghese Mathai\aff{1,2}$\dagger$, 
+	Laura A. W. M. Loeffen\aff{2}\footnote{Equally contributed authors ; ~ ~$\ddagger$ swildeman@gmail.com},
+	Timothy~T.~K.~Chan\aff{2,3},
+	and Sander Wildeman\aff{4,2}$\ddagger$ }
+%\corresp{\email{swildeman@gmail.com}}}
+
+
+\affiliation{\aff{1} School of Engineering, Brown University, Providence, RI 02912, USA.
+	
+	\aff{2} Physics of Fluids Group and Max Planck Center for Complex Fluids,\\ Faculty of Science and Technology,
+	University of Twente, P.O. Box 217, 7500 AE Enschede, The Netherlands.
+	
+	\aff{3} Department of Physics, The Chinese University of Hong Kong, Shatin, Hong Kong.
+	
+	\aff{4} Institut Langevin, ESPCI, CNRS, PSL Research University, 1 rue Jussieu, 75005 Paris, France.
+}
+
+
+
+
+
+\begin{document}
+	
+	\maketitle
+	
+	
+	\begin{abstract} 
+	The humble pendulum is often invoked as the archetype of a simple, gravity driven, oscillator. Under ideal circumstances, the oscillation frequency of the pendulum is independent of its mass and swing amplitude. However, in most real-world situations, the dynamics of pendulums is not quite so simple, particularly with additional interactions between the pendulum and a surrounding fluid.  Here we extend the realm of pendulum studies to include large amplitude oscillations of heavy and buoyant pendulums in a fluid. We performed experiments with massive and hollow cylindrical pendulums in water, and constructed a simple model that takes the buoyancy, added mass, fluid (nonlinear) drag, and bearing friction into account. To first order, the model predicts the oscillation frequencies, peak decelerations and damping rate well.  An interesting effect of the nonlinear drag captured well by the model is that for heavy pendulums, the damping time shows a non-monotonic dependence on pendulum mass, reaching a minimum when the pendulum mass density is nearly twice that of the fluid. Small deviations from the model's predictions are seen, particularly in the second and subsequent maxima of oscillations. Using Time- Resolved Particle Image Velocimetry (TR-PIV), we reveal that these deviations likely arise due to the disturbed flow created by the pendulum at earlier times. \textcolor{black}{The mean wake velocity obtained from PIV is used to model an extra drag term due to incoming wake flow. The revised model significantly improves the predictions for the second and subsequent oscillations.}
+	
+	\end{abstract}
+	
+	\begin{keywords} nonlinear dynamical systems, particle/fluid flow, wakes
+	\end{keywords}
+	
+	
+	\vspace{-1.5 cm}
+	\section{Introduction}
+
+
+
+%The simple pendulum is today one of the most common examples in science demonstrations used to covey the fundamental concepts of classical mechanics. 
+{The first known study on pendulums dates back to Galileo Galilei in 1605. The story goes that Galileo observed the lamplighter pushing one of the swaying chandeliers in the Pisa cathedral. Galileo timed the swings with his pulse and concluded that, although the amplitude decreased, the time of each swing remained constant. 
+%While Galileo's observation
+% that the period of a simple pendulum is independent of its mass
+%might seem trivial in the present day context, it provided the first demonstration of an important model system in Newtonian mechanics.
+\textcolor{black}{Half a century later this observation inspired Christiaan Huygens to invent the pendulum clock, which until 1930 has set the standard for accurate timekeeping. Based on Newton's laws of motion Huygens could derive that an ideal, frictionless pendulum has a period $T= 2  \pi \sqrt{L/g}$ for small amplitudes, where $L$ is its length, and $g$ the acceleration due to gravity~\citep{huygens1986christiaan}. However, as is well known to any clockmaker, real pendulums are often far from ideal. Even in vacuum, and when friction is negligible, one has to take into account the finite amplitude and  mass distribution of the pendulum in order to correctly predict its period. When a pendulum swings in a fluid such as air or water, additional fluid forces have to be taken into account. In fact, it was through careful observations of deviations from ideal pendulum motion that the nature and strength of many of these fluid forces were brought to light. Concepts like buoyancy, added mass and fluid friction (viscosity) emerged concurrently with the study of pendulums swinging in different fluid environments~\citep{stokes1851effect}.}}
+
+
+%The equation of motion of a simple pendulum of  mass $m$ attached to an infinitely light rigid rod of length $L$ can be written as:
+%$m L \ d^2\theta/dt^2 = - m  g \ \sin{\theta}$, where $\theta$ is the angular displacement from the vertical position, and $g$ is the acceleration due to gravity. Under the small angle approximation, this equation yields the classical result that the  period of oscillation $T= 2  \pi \sqrt{L/g}$.  For finite amplitude oscillations, the time period is larger: ${T}_\alpha \approx T(1+\frac{1}{16} \alpha^2 + \frac{11}{3072} \alpha^4)$, where $\alpha$ is the amplitude of oscillation. These demonstrated that the oscillation time period of a simple pendulum is independent of its mass. This elegant result follows from the equivalence of the gravitational and inertial masses in the pendulum equation of motion~\cite{neill2007pendulum,bolster2010oscillating}, and is valid when the oscillations occur in vacuum, and in the absence of friction.
+
+%While the motion of the pendulum in vacuum is well understood, the typical pendulum dynamics is far from the simple equation of motion presented in textbooks. A few investigators have in recent years looked into the  dynamics of heavy objects swinging in viscous fluids. 
+\textcolor{black}{In recent years there has been a renewed interest in the use of simple pendulums to probe fluid-structure interactions.}
+%Bolster \etal~\cite{bolster2010oscillating} studied a pendulum in water using spherical bobs. They measured the loss in potential energy during the swings to obtain the drag coefficient variation with Reynolds number. This study was conducted in the linear drag regime, where the Stokes drag provided a fair prediction of the forces acting on the spherical bob of the pendulum.  
+\cite{neill2007pendulum} conducted experiments on steel and brass pendulums oscillating in different fluids. Their results agreed fairly well with the motion predicted by taking the buoyancy and added mass into account, implying that viscous corrections played only a minor role in the oscillation frequency. 
+%A few studies also involved modified pendulums. \cite{gonzalez2006controlled} built a pendulum with an eddy-current damping system. In this case, a clear frequency shift was detected between the undamped and damped oscillations.  
+In an extension to this, \cite{bolster2010oscillating} conducted experiments on a  pendulum oscillating in a viscous fluid.
+In all of the above studies, the researchers focused on small amplitude vibrations of dense pendulums in viscous fluids, where the dynamics could be reasonably modelled using the ideal flow approximation, with the inclusion of a linear drag in the equation of pendulum motion.  {\color{black}Many studies have focused on the flow disturbances induced by an oscillating body in a fluid. For one-dimensional oscillations at low to moderate Reynolds numbers, the effect of a body's oscillation on the wake around it has been studied in some detail~\citep{tatsuno1990visual,tatsuno1993wavy}. Various types of wakes have been quantified depending on the body oscillation frequency, velocity, fluid viscosity and the characteristic length scale of the problem.} \textcolor{black}{More recent studies have addressed the influence of flow disturbances on pendula stability. \cite{obligado2013bi} found that the equilibrium of a pendulum facing an incoming flow displays both bi-stability and hysteresis. Further, flow disturbances due to incoming turbulence can modify the stability map by changing the drag acting on the pendulum. }
+
+
+%\textcolor{red}{Here you must write about the extensive literature on oscillating bodies. Referee 2's suggestions for references must be fully incorporated here. Also mention about the complexities of unsteadiness and drag and added mass.}
+
+%One can obtain two dimensionless parameters, the Keulegan-Carpenter number $KC = \frac{v_a}{f_o \ D}$, and the Stokes number $\beta_{st} = \frac{f_o D^2}{\nu}$. Here $v_a$ is the velocity amplitude,  $f_o$ the oscillation frequency, $D$ the characteristic length (diameter) of the body, and $\nu$ the kinematic viscosity. The values of $KC$ and $\beta_{st}$ determine the regime of wake excitation~\citep{tatsuno1990visual}.
+
+% \textcolor{blue}{An oscillating body can produce many modifications to the flow field around it. The Keulegan-Carpenter number $KC$ lies in the range 2--5 for the oscillations seen in the figure. This might correspond to three dimensional instabilities with the formation of longitudinal vortices around the cylinder \citep{tatsuno1990visual}. However, we note that our experiment is far more complexm with a higher Stokes and Reynolds numbers. Moreover, the cylinder slows down in time, and its trajectory has a curvature, which might further lead to differences in the wake.} 
+
+
+\begin{figure} 
+	\centering
+	\includegraphics[width= 0.85\textwidth]{fig1-eps-converted-to.pdf}
+	%\includegraphics{Figure1_setup.eps}
+	\caption{Schematics of the experimental setup for (a) heavy and (b) buoyant pendulums. (c)~Cylinder mass was varied by inserting brass disks into the hollow cylinder. (d) Experimental setup used for performing PIV measurements.}
+	\label{setup}
+	\vspace{-.4 cm}
+\end{figure}
+
+
+
+%An interesting extension to pendulum dynamics can be imagined by considering pendulum of arbitrary mass densities swinging in a fluid. Moreover, in most practical scenarios, pendulum oscillations can be large in amplitude, and the forces acting may involve nonlinear components. Thus, in the present work, we conduct a systematic study of damped oscillations of ....
+%
+%This is particularly the case when the oscillations are in a viscous fluid. In such situations, buoyancy, added-mass, and the steady and unsteady components to the fluid drag affect the pendulum.  In addition, history effects may also play a role, which can be very difficult to disentangle. While the buoyancy force is straight forward to include, the added mass $m_a$ is a concept derived from potential flow theory. However, there have been attempts to define added mass for translation in viscous flows, which have basically concluded that the usual definition for potential flow can still be used~\cite{}. drag forces include viscous drag, which is proportional to the velocity, and the high Reynolds number drag, which is proportional to the square of the velocity. 
+%
+%
+%Write about more scientific studies in literature. Mention what is missing, and what aspects were never investigated in previous studies. Mention also why these factors are important to understand real systems, such as towed and tethered body systems. State the individual results. Highlight the complexities of the flow, which calls for a systematic exploration of the problem. 
+%
+%
+%{\color{blue}As mentioned, numerous studies about pendulums in vacuum and air exist. For instance, Amrani, Paradis and Beaudin, and Lima and Arun independently established satisfactory approximations of $T$ of large-amplitude undamped pendulums based on Eq. (\ref{LargeAmplitudeOscillation}),\cite{Lima,Armani} K\"{o}pf investigated the Wilberforce pendulum -- a pendulum with multiple modes of oscillations -- in air~\cite{Kopf}, and Gonz\'{a}lez and Bol~\cite{Gonzalez} examined a damped pendulum in air. The abundance of research on pendulums in air implies this subject is well-studied.
+%	
+%	Relatively little research has been done on pendulums in other media. Amongst these studies, for numerical simulations, Baranov, Isaev, Kudryavtsev and Kharchenko~\cite{Baranov} examined a cylindrical pendulum oscillating at large amplitudes in a closed tank filled with a fluid where the ratio between the density of the pendulum ($\rho_p$) to that of the fluid ($\rho_f$), $m^*$, was 2.70. In their system, the Reynolds number Re $= 100$ and the Froude number Fr = 1~\textcolor{red}{Define Froude if you are using it}. Here, Re is the ratio of inertial to viscous forces, which is defined as $\frac{Ul}{\nu}$, where $U$ is the speed of the object, $l$ is the characteristic length dimension of the system and $\nu$ is the kinematic viscosity of the fluid. Intuitively, Re could be viewed as a measure of the degree of turbulence of the flow: the larger the Re, the more turbulent the flow is~\cite{Kundu}. From their simulation's results, they identified characteristics associated with the interactions which were due to the cylinder's proximity to the tank walls, and also found that $T$ decreased initially and then increased afterwards~\cite{Baranov}. However, the added mass of the system appears to have been neglected and Re of the system was rather low. Furthermore, the instability in the motion of a confined cylindrical pendulum was examined through exposing the pendulum to an incoming flow~\cite{Fani}. For experimental studies, Neill, Livelybrooks and Donnelly~\cite{Neill} investigated the effect of added mass on the frequency of spherical damped pendulums in various fluids including water.\cite{Neill} Yet, in this study, fluid drag was not modelled and only small-amplitude oscillations were considered. Bolster, Hershberger and Donnelly also studied the decay in amplitude of, again, small-amplitude spherical pendulums in water.\cite{Bolster} It was found that deviations from Stokes drag at relatively large Re could be attributed to vortex ring shedding. From the above studies, it appears that apart from the fact that drag or added mass were at times ill-represented, little has been done on pendulums oscillating at large-amplitudes in water. Yet, while in vacuum and air, the gravitational and inertial masses of pendulums are equal, thus contributing to the independence on mass of $T$ and $T_0$; in water, due to added mass, the two are unequal. Moreover, as opposed to those in vacuum and air, for damped pendulums in other fluids, the effect of the flow around the pendulum may be strong enough to affect its dynamics. Thus, while there are many studies about pendulums in vacuum and air, and their theories are reasonably well established, due to the unique characteristics of pendulum in water and the inadequacies of the existing studies, further examination of pendulums in water is warranted.
+%}
+
+
+\textcolor{black}{Here we extend the scope of pendulum-fluid interaction studies to the regime of large amplitude motions of  heavy and buoyant cylindrical pendulums in a dense fluid.}  %\cm{Controlled experiments were} conducted in a regime where the Reynolds number (based on the diameter of the pendulum) is of the order of $10^4$. %We tested the consequences of the non-Stokesian drag and the non-equivalence of gravitational and inertial masses in the equation of pendulum motion.
+\textcolor{black}{We have performed controlled experiments in which we simultaneously track the motion of the pendulum and the flow field around it, in a regime where the Reynolds number (based on the cylinder diameter) Re $\sim \mathcal{O}(10^4)$.} The control parameter in our experiment is the cylinder to fluid density ratio $m^* \equiv \rho_p/\rho_f$ The ratio of the cylinder diameter to the pendulum length $D/L$, the fluid properties~($\rho_f$ and $\nu$) and the release angle~($\theta_0 = 90^\circ$) are fixed. 
+%As we will see later, the Galileo number is yet another important parameter governing the ratio of buoyancy to viscous forces. 
+We vary $m^*$, covering both buoyant~($m^* < 1$) and heavy~($m^* > 1$) pendulums. We build on the knowledge of buoyancy, added mass and inertial drag to construct a basic model for the pendulum motion, which we compare in detail to the experiments. \textcolor{black}{We find that a reduced added mass as compared to the ideal flow case leads to better agreement between experiment and model predictions. We use insights from particle image velocimetry (PIV) measurements to model a higher-order fluid-structure interaction, by which initially induced fluid motions affect the force on the pendulum at later instants.}
+
+
+%In the present work, we study the large amplitude oscillations of a cylindrical pendulum in water. The experiments are conducted in a regime where the cylinder Reynolds number is of the order of $10^4$. We test the consequences of the non-Stokesian drag and the non-equivalence of gravitational and inertial masses in the equation of pendulum motion. We performed controlled experiments in a water tank to track simultaneously the oscillations and the flow field around a cylindrical pendulum. The control parameter in our experiment is the cylinder to fluid density ratio $m^* \equiv \rho_p/\rho_f$, while the ratio of the cylinder diameter to the pendulum length $D/L$, the fluid properties~($\rho_f$ and $\nu$), and the release angle~($\theta_0 = 90^\circ$) are fixed. As we will see later, the Galileo numer is yet another important parameter governing the ratio of buoyancy to viscous forces. We vary $m^*$, covering both buoyant~($m^* < 1$) and heavy~($m^* > 1$) pendulums in water. We build on the knowledge of buoyancy, added mass, and drag to propose a basic model for the pendulum motion. The predictions of this model are compared with our experimental observations. We use time-resolved Particle-Image-Velocitmetry (PIV) for tracing the flow field around it. Details of the coupled dynamics of the pendulum and the flow around it are presented.
+%
+
+
+\vspace{-.4 cm}
+
+
+\section{Experiments}
+
+
+The experiments were conducted using a cylindrical pendulum, with length $L = 203$~mm, diameter $D = 32$ mm and span $W = 300$ mm. This resulted in a cylinder span to diameter ratio $W/D \approx 10$. The cylinder attached to the pendulum arm was constructed from polyvinyl chloride~(PVC) pipe sealed with two plastic caps. Masses could be inserted inside the pipe~(see Fig.~\ref{setup}(c)), which let us study both heavy and buoyant pendulums in water. 
+
+
+
+
+
+The pendulum was placed in a water tank (800 mm $\times$ 400 mm $\times$ 500 mm), and pivoted on a metal rod (radius $R = 3$ mm), which was fixed to the walls using suction cups. \textcolor{black}{The wire connecting the cylinder to the pivot axis had a diameter of 1.2 mm. This was thick enough to not bend during oscillations, while also providing low resistance to the flow.} The cylinder ends remained at least $1.3D$ away from the side walls. The lowest position of the heavy cylinder during its motion was $5D$ above the base of the water tank, and similarly, the highest position of the buoyant cylinder during its motion was $5D$ below the water level. Schematics of the basic experimental arrangement for  the heavy and buoyant cases are shown in Fig.~\ref{setup}(a) \& (b), respectively. \newline 
+%While most of the components were the same, the main difference was in the release mechanism. 
+The release mechanism consisted of a semicircular cavity with two curved metal wire segments. The cylinder was held against the semicircular cavity, and locked in place by the metal wires. The release was done by pulling the wire, which ensured a gentle release of the pendulum without creating disturbances in the water. By inverting these parts, the buoyant pendulums could also be released without disturbing the water. The release position was at  a $90^\circ$ angle from the vertical. A waiting interval of 15 minutes ensured that any residual flow from a previous run had damped out.  
+
+A high-speed camera~(Photron Fastcam 1024PCI) was used to record the pendulum motion. The cylinder movement was detected using a circle detection method~\citep{mathai2015wake}. \textcolor{black}{The standard deviation of error in centre detection was around 0.27 mm for all cases, i.e. $<$ 1\% of the pendulum diameter.} Additionally, we performed Time-Resolved Particle Image Velocimetry~(TR-PIV) to measure the flow field surrounding the pendulum. The flow was seeded with fluorescent polystyrene tracer particles (diameter $\approx 125 \ \mu$m). The seeding particle size was small enough to have both a small Stokes number and a small Stokes/Froude ratio~\citep{mathai2016microbubbles}. A high-speed Laser~(Litron LDY-303HE) along with cylindrical optics was used to create a light sheet through the mid-section of the cylinder. Mirrors were placed as shown in Fig.~\ref{setup}(d), which ensured that the shadows cast by the cylinder were removed by reflected light. This enabled us to have well-lit tracer particles all around the cylinder. \textcolor{black}{A double-frame camera~(Imager sCMOS) was used at a frame rate of 25 fps. The particle seeding density for PIV was such that an interrogation window contained around 6 particles, which is considered good for accuracy. The inter-pulse time $\Delta t$ was varied from 1--3 ms. $\Delta t$ was optimised by ensuring that most of the tracer particles remained within the interrogation window, with a maximum movement $\approx 1/4^{th}$ of the window width. The PIV analysis was done with two stage processing and 50 percent overlap using LaVision software.} 
+%
+%When the pendulum moves through water, it disturbs the fluid around it. We conducted two-dimensional time-resolved Particle Image Velocimetry~(2D TR-PIV) to measure the flow velocities on a plane passing through the mid-section of the pendulum. Fluorescent tracer particles were used
+
+
+%One way to understand the effect of placing the pendulum in water instead of in air, which is very similar to placing it in vacuum, is to study the flow field in the water tank. This was achieved by conducting two-dimensional time-resolve Particle-Image Velocimetry (PIV).
+%
+%In simple terms, in PIV, small fluorescent particles called tracers which faithfully follow the flow and effectively scatter light are added evenly to the fluid. By taking images of the tracers in quick succession with a pulsed laser illuminating only the tracers, and examining the displacement of groups of tracers in the same area, known as an interrogation window, in two successive images using cross-correlation, the average flow velocity of the fluid in the window is established. Repetition of this process thus returns the entire flow field.
+%
+%The PIV conducted was two-dimensional since the situation was viewed identical along any vertical cross-section perpendicular to the axis of the cylinder. To ensure tracers in the shadow of the cylinder were illuminated and captured, two mirrors were fitted at one end of the tank. Figure \ref{PIVImage} shows the situation in the water tank when PIV was conducted.
+%
+%In this experiment, PIV images were taken by the LaVision Imager sCMOS camera and subsequently processed using the DaVis PIV software. The tracers used were polyethylene microspheres with approximate diameters of $50 \mu$m.
+
+
+
+
+
+\vspace{-.4 cm}
+
+
+\section{Model equation of motion}
+
+
+
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=.45\textwidth]{./Figures_reduced_pdfs/Figure3_Pendulum_EqtofMotion.eps}
+%	\caption{Schematic of the cylindrical pendulum at an instant when it swings to the right. Blue arrows indicates the forces on the pendulum: buoyancy ${F_B}$, weight ${F_g}$, drag ${F_D}$, normal force due to the pendulum arm ${F_N}$, and a bearing friction ${F_f}$. The dashed arrow and $v_p$ denote the instantaneous velocity of the cylinder. }
+%	\label{FreeBodyDiagram}
+%		\vspace{-.4 cm}
+%\end{figure}	
+
+
+		
+%The oscillation of a pendulum in water is primarily influenced by gravity, buoyancy and fluid drag. Due to experimental limitations, the pendulum may also experience some bearing friction. 
+The equation of motion of a pendulum oscillating in a fluid can be expressed by Newton's law in the angular form:
+\begin{align}
+I \frac{d^2 \theta}{dt^2} &= \sum{\tau},
+\label{eqn:Equation of Motion}
+\end{align}
+Here, $\theta$ is the angular position of the pendulum with respect to the equilibrium position, $I$ the moment of inertia of the system and ${\tau}$ the net torque acting on the system~(see Fig.~\ref{PendulumSwing}(a)). The pendulum mass and moment of inertia come mostly from the cylinder at a distance $L$ from the rotation axis. Since $2 L/D > 10$,  the cylinder moment of inertia about its mass centre $I_{cm} = m D^2/8$ is negligible compared to the pendulum moment of inertia $m L^2$. 
+% is mostly concentrated at a distance $L$ from the axis of rotation. Even for the lightest case studied here, the moment of inertia of the rod about the pivot axis contributed to less than 6\% of the total moment of inertia of the system. 
+%\textcolor{black}{The ratio of the rod length to cylinder radius $2L/D >10$. Therefore, the cylinder moment of inertia about its center of mass $I_{cm} = m D^2/4$ is neglected in comparison to the the pendulum moment of inertia $m L^2$. }
+The effect of the pendulum accelerating through the fluid is modelled by means of an added mass $m_a$. Therefore, the effective mass of the system can be written as $m_{eff} = m + m_a$. With these approximations, we model the system as a point mass with a moment of inertia: $I_p= m_{eff} L^2$.
+
+
+
+The torques acting on the system can be written as $\sum {\tau} = \sum {r} \times {F}$, where ${F}$ are the individual forces, and ${r}$ the corresponding arm lengths. The forces acting on the system are gravity $F_g \equiv \rho_p \mathcal{V} g$, buoyancy $F_B \equiv \rho_f \mathcal{V} g$, fluid drag $F_D$ and a bearing friction $F_f \approx \mu_f F_N$ (see Fig.~\ref{PendulumSwing}(a)). Here, $\rho_p$ and $\rho_f$ are the particle and fluid densities, respectively, $\mathcal{V}$ is the cylinder volume, $\mu_f$ is the friction coefficient and $F_N \approx (F_B - F_g) \cos \theta$ is the normal force acting at the bearing. \textcolor{black}{The tension due to the centrifugal force is negligible.} {The Galileo number $\text{Ga} \equiv \sqrt{g D^3 |m^*-1|}/\nu$. The velocity scale in Ga is a gravitational  velocity $v_g = \sqrt{gD |1-m^*|}$. The Reynolds number is defined as Re~$ = v_{max} D/\nu$, where $v_{max}$ is the measured maximum velocity of the cylinder in the first swing. We note that Ga~$\sim~\mathcal{O}(10^3 - 10^4$) gives a predictive estimate of the Re range in the experiment~(see Table~\ref{ReGa}).} 
+%This suggests that the pendulum motion will be in the high Reynolds number limit. 
+The drag force may be written as $F_D  = \frac{1}{2}\rho_f A_p C_D \ v_p^2$, where $C_D$ is the drag coefficient, $A_p$ is the projected area of the cylinder and $v_p \equiv  L d\theta /dt$ is the instantaneous cylinder velocity~\citep{batchelor2000introduction}. \textcolor{black}{By defining $m^* \equiv \rho_p/\rho_f$ and $\tilde{t} \equiv t\sqrt{g/L}$, the equation of motion can be written in non-dimensional form as}
+
+
+%The equation of motion after non-dimensionalization with respect to $m^* \equiv \rho_p/\rho_f$ and $\tilde{t} \equiv t\sqrt{g/L}$ can be written as 
+
+%where $I = ML^2$ is the moment of inertia of a point mass $M$ at a distance $L$ from the pivot. Due to acceleration of the pendulum in a fluid the expression for the moment of inertia is extended with added mass. The added mass is defined by the volume of the fluid where $m_a^*$ is the weight of the added mass. Therefore, the moment of inertia becomes $(m^*+ m_a^*) L^2 \mathcal{V} \rho_f$ where $m^*$ is the density ratio of particle and fluid $\rho_p/\rho_f$ with $\rho_p$ and $\rho_f$ as the densities of the particle and fluid, respectively. The length of the pendulum is called $L$ and the volume of the particle $\mathcal{V}$. The torque acting on the system is ${\tau} = {F} \times {r}$. We assume the pendulum motion is in high Reynolds number limit therefore the drag force is defined as $F_D = C_D \rho_f A_p u^2 / 2$ where $A_p$ is the area of the particle and $u$ the instantaneous velocity of the cylinder $L d\theta /dt$. The drag force direction is opposite to the velocity. The other forces influencing the system are the gravitational force $W = \rho_p \mathcal{V} g$ and the buoyancy force $F_B = \rho_f \mathcal{V} g$. The experiment is limited due to a bearing friction between the axis and the pendulum which is defined by $F_f = \mu_f F_N$ where $\mu_f$ is the friction coefficient and $F_N$ the normal force. The equation of motion is simplified by nondimensionalization $\tilde{t} \equiv t\sqrt{g/L}$. The equation of motion can be written as 
+%\begin{equation}	\label{EqtofMotion}
+%%(m^* + m_a^*)\frac{d^2\theta}{d\tilde{t}^2} = -\left| m^* - 1 \right| \sin{\theta} - \frac{C_DAL}{2\volume{}}\left|\frac{d\theta}{d\tilde{t}}\right|\frac{d\theta}{d\tilde{t}} \pm \mu_f|m^* - 1|\frac{R}{L}\cos\theta,
+%\end{equation}
+\begin{align}
+m_{eff}^* \frac{d^2 \theta}{d\tilde{t}^2}= - k \sin{\theta} \ - \ c \left| \frac{d \theta}{d \tilde{t}}\right| \frac{d \theta}{d \tilde{t}} \ - \ h \left | \cos{\theta} \right | \ \text{sgn} \left( \frac{d \theta} {d\tilde{t}} \right)
+\label{EqtofMotion},
+\end{align}
+where $m_{eff}^* = (m^* + m^*_a); \ k = \left |m^* - 1 \right |; \ c = \frac{1}{2} C_D \frac{A_p L}{\mathcal{V}};$  and $h = \mu_f\left| m^* -1 \right| \frac{R}{L}$.\\
+
+
+%\begin{align*}
+%m_{eff}^* &= (m^* + m^*_a) \\
+%k &= \left( m^* - 1 \right) \\
+%c &= \frac{1}{2} C_D \frac{A_p L}{\mathcal{V}} \\
+%h &= \mu_f\left| m^* -1 \right| \frac{R}{L} 
+%\end{align*}
+
+
+%The equation of the pendulum oscillating in a fluid can be expressed by a torque balance equation. The equation in the general form reads:
+%\begin{align}
+%I \frac{d^2 \theta}{dt^2} &= \sum{\tau}
+%\label{eqn:Equation of Motion}
+%\end{align}
+%Here, $\theta$ represents the angular position of the pendulum with respect to the equilibrium position, $I$ is the moment of inertia of the system, and $\boldsymbol{\tau}$ represents the torque acting on the system~(see Fig.~\ref{FreeBodyDiagram}). Now, the pendulum mass is mostly concentrated at a distance $L$ from the axis of rotation. Therefore,  it can be modeled as a point mass with a moment of inertia: $I_p= m L^2$. When the pendulum accelerates through the fluid, it must also accelerate some fluid surrounding it. This effect can be modeled using the added mass conceptr. The effective mass of the system $m_{eff}$ is now the sum of the pendulum mass $m$ and the added mass $m_a$, so $m_{eff} = m + m_a$.
+%
+%%The added mass is known for a cylinder moving through an ideal fluid. For an infinitely long circular cylinder, the added mass $m_a = m_a^* \rho_f \mathcal{V}$, where $m_a^* = 1.0$ is known as the added mass coefficient. The weight of the wire holding the pendulum mass is negligible. Therefore, the moment of inertia of the wire may be neglected. 
+%
+% The forces acting on the cylinder are its weight $F_g = m g$, buoyancy $F_B = \rho_f \mathcal{V} g$, fluid drag $F_D$, and friction at the bearing~$F_f$.  Here, $\mathcal{V}$ is the cylinder volume, and $g$ is the acceleration due to gravity. The cylinder Reynolds numbers in our experiments are large. Therefore, we use the expression for the nonlinear drag $F_D = \frac{1}{2}C_D\rho_f A_p v_p^2$, where $v_p$ is the instantaneous velocity of the cylinder, $C_D$ the drag coefficient, and $A_p$ the projected area of the cylinder. $v_p$ may again be written as $v_p = L \frac{d \theta}{dt}$. The bearing friction may be expressed as $F_{f} = \mu_f \left( \rho_f - \rho_p \right) \mathcal{V} g \cos{\theta}$, where $\mu_f$ is the friction coefficient. Similar to the drag force the friction force is working in opposite direction of the motion. The forces act along different distances from the pendulum axis. These are shown in Fig.~\ref{FreeBodyDiagram}.
+%%\begin{align*}
+%%\boldsymbol{\tau} &= \boldsymbol{F} \times \boldsymbol{r}
+%%\end{align*}
+%%On the cylinder is a gravitational force $F_g$ applied. This forces is pointed downward.
+%%\begin{align*}
+%%F_g &= \rho_p \mathcal{V} g
+%%\end{align*}
+%%In opposite direction to the gravitational force is the buoyancy force $F_B$ applied which is a force exerted by the fluid surrounding the particle that opposes the weight of the particle.
+%%\begin{align*}
+%%F_B &= \rho_f \mathcal{V} g
+%%\end{align*}
+%
+%
+%
+%
+%%The string which is attached on one end to the cylinder and on the other end to the axis of rotation. Normally, in a simple pendulum model the pendulum is moving frictionless around a pivot point. In this case the string is attached to the axis with a ring, therefore some bearing friction between the axis and the ring is possibly influencing the motion. The friction force $F_{fric}$ is based on the normal force working on the surface of the axis due gravity and buoyancy.
+%%\begin{align*}
+%%F_{fric} &= \mu_f \left( \rho_f - \rho_p \right) \mathcal{V} g \cos{\theta}
+%%\end{align*}
+%
+%The torque balance equation may be expressed in dimensionless form using dimensionless mass $m^* = \rho_p/\rho_f$ and dimensionless time $\tilde{t} = t/t_c$, where $t_c = \sqrt{L/g}$.    The final equation in the dimensionless form is written as:
+%\begin{align}
+%m_{eff} \frac{d^2 \theta}{d\tilde{t}^2}= - k \sin{\theta} \ + \ c \left| \frac{d \theta}{d \tilde{t}}\right| \frac{d \theta}{d \tilde{t}} \ + \ h {\frac{d \theta}{d \tilde{t}}}{\left| \frac{d \theta}{d \tilde{t}}\right|}^{-1} \cos{\theta}
+%\label{Final Nondimensional EoM},
+%\end{align}
+%where the constants, $m$, $k$, $c$ and $h$ are defined as:
+%\begin{align*}
+%m_{eff} &= m^* + m^*_a \\
+%k &= \left( m^* - 1 \right) \\
+%c &= - \frac{1}{2} C_D \frac{A_p L}{\mathcal{V}} \\
+%h &= -\mu_f\left( m^* -1 \right) \frac{R}{L} 
+%\end{align*}
+
+
+%{\color{blue} When the oscillations are in an ideal fluid, and when the bearing friction is neglegible, the above equation reduces the form:
+%	\begin{equation}
+%m_{eff} \frac{d^2 \theta}{d\tilde{t}^2}= - k \sin{\theta} 
+%	\end{equation}
+%	
+%The  frequency in this limit of small amplitude oscillations becomes 
+%	
+%	\begin{equation} \label{eq_addedmass}
+%	f/f_{sp}~=~\sqrt{\frac{|m^* -1|}{(m^* + m_a^*)}},
+%	\end{equation}
+%	
+%where $f_{sp}$ is the frequency of a simple pendulum in vacuum~\cite{neill2007pendulum}. In Fig.~\ref{PendulumSwing}(b), we plot the oscillations of the pendulum with the time axis normalized using this prediction.  However, the prediction does not work for the present case. Clearly, the drag, friction, and deviations from ideal flow assumption are important in our experiments.
+%	
+%}
+
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.9\textwidth]{fig2-eps-converted-to.pdf}
+	\caption{(a) Schematic of the cylindrical pendulum at an instant when it swings to the right. Blue arrows indicates the forces on the pendulum: buoyancy ${F_B}$, weight ${F_g}$, drag ${F_D}$, normal force due to the pendulum arm ${F_N}$, and a bearing friction ${F_f}$. The dashed arrow and $v_p$ denote the instantaneous velocity of the cylinder. (b) Angular position ($\theta$) vs time for $m^* = 4.98$ and $m^* = 1.16$ cases. (p1) \& (p2) -- peak deceleration points.}
+	\label{PendulumSwing}
+		\vspace{-.4 cm}
+\end{figure}
+
+
+	\begin{table}
+		\caption{Ga, and Re for a selected number of mass density ratios $m^*$ used in the experiment.}
+		
+		\centering
+		\begin{tabular}
+			{p{0.14\linewidth}p{0.06\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}p{0.04\linewidth}}
+			
+			\hline
+			\hline
+			~ & \vline~~ & ~ & Heavy~ & ~ & ~ & ~ &  & \vline~ & Buoyant & ~ & ~          \\
+			
+			\hline
+			
+			$m^*$ & \vline~4.98 & 4.15 & 3.65 & 2.82 & 2.20 & 1.79 & 1.37 & \vline~0.95 & 0.75 & 0.54 & 0.33          \\
+			%\hline St & 0.008 & 0.011 & 0.016 & 0.022  &  0.035 \\ 
+			\hline Ga $\times 10^{-3}$ & \vline~35.8 & 31.8 & 29.2 & 24.2 & 19.6 & 15.8 & 10.9 &\vline~3.8 & 9.0 & 12.2 & 14.6         \\
+			\hline			Re $\times 10^{-3}$  &\vline~33.7 & 30.9 & 28.8 & 24.7 & 20.6 & 16.9 & 11.9 &\vline~4.2 & 10.0 & 13.7 & 16.6          \\  
+			
+		\end{tabular}
+		\label{ReGa}
+		\vspace{-.05 cm}
+	\end{table}
+	
+
+In order to solve eq~\ref{EqtofMotion}, $m_a^*$, $C_D$ and $\mu_f$ have to be set. \textcolor{black}{It is well known that added mass coefficients $m_a^*$ for oscillating cylinders depend on a variety of parameters, including the frequency of oscillation,  distance to boundaries, free surfaces, etc. Most studies have focused on the case of cylinders near a free surface and for small oscillations~\citep{dong1978effective,konstantinidis2013added,koo2015simplified,tatsuno1990visual,mathai2017mass,mathai2018flutter}. However, in complex situations with relative motions, curved trajectories and unsteady three-dimensional wakes with flow separation, $m_a^*$  can deviate significantly from the two-dimensional potential flow added mass coefficient. Moreover, the fact that the cylinder span is finite will induce a three-dimensional (3-D) flow near the cylinder ends, allowing some fluid to move to the sides. %The Keulegan-Carpenter number $KC$ lies in the range 2--5, which is indicative of three dimensional instabilities with the formation of longitudinal vortices around the cylinder~\citep{tatsuno1990visual}. 
+Therefore the cylinder motion is expected to accelerate less fluid in the 3-D case as compared to 2-D potential flow. Nevertheless, to begin with, we choose the 2-D potential flow added mass coefficient of an infinite cylinder, $m_a^* =1.0$.}
+
+
+
+The drag coefficient range in our experiments could be estimated from  the range of Re~(see table~\ref{ReGa}). 
+%\textcolor{black}{As a first approximation, Ga could be viewed as being comparable to the cylinder Reynolds number. Ga lies in the range [$3800 -35800$]. }
+\textcolor{black}{{We begin with a simplified mean drag coefficient $C_D \approx 1.2$ based on the Reynolds number range in our experiments~\citep{lienhard1966synopsis}. Note that the influence of Reynolds number and vortex shedding on $C_D$ are not included at this stage, and will be discussed later.} $\mu_f$ is expected to lie in the range [$0.2 -0.3$] for lubricated steel-on-steel contact. We estimated $\mu_f \approx 0.2$, based on tests performed using very heavy pendulums in air, since in these cases the drag and added mass forces were at a minimum.}
+
+	%We examine the predictions of the model. 
+	% As indicated in Table \ref{ReGa}, Re is comparable to Ga, indicating that the approach is self consistent.  This  also suggests that the pendulum attained a speed comparable to the terminal speed of a falling cylinder in 2D, i.e $v_g \simeq \sqrt{g D \ |m^* -1| }$. Next, we focus on the full motion of the pendulum. 
+	Fig.~\ref{PendulumSwing}(b) shows $\theta$ vs $t$ predicted by the model for heavy pendulums with $m^* = 1.16$ and $m^* =4.98$.
+	Clearly, the amplitude decay and oscillation frequency depend on the mass density ratio. With this in mind, we explore the predictions for a range of $m^*$, covering  heavy and buoyant underwater  pendulums.
+	
+
+
+%	\begin{table}[h]
+%	\caption{Ga and Re for some of the tested $m^*$. Here, Re $= U_0D/\nu$, where $U_0$ is the maximum speed attained by the pendulum calculated from the model based on $C_D = 1.2$ and neglecting the added mass and friction. Note the similarity between the calculated Re and Ga.}
+%
+%		\begin{tabularx}{\textwidth}{@{}s | Y Y Y Y | Y Y Y Y Y Y Y}
+%			\hline\hline
+%			\multicolumn{1}{c|}{} & \multicolumn{4}{c|}{Buoyant}	& \multicolumn{7}{c}{Heavy}\\
+%			\hline
+%			$m^*$ & 0.33 & 0.54 & 0.75 & 0.95 & 1.37 & 1.79 & 2.20 & 2.82 & 3.65 & 4.15 & 4.98\\
+%			Ga & 14652 & 12164 & 9012 & 3807 & 10907 & 15888 & 19644 & 24209 & 29206 & 31830 & 35778\\
+%			Re & 16626 & 13695 & 10063 & 4213 & 11856 & 16962 & 20601 & 24737 & 28882 & 30932 & 33733\\
+%			\hline\hline
+%		\end{tabularx}
+%				\label{ReGa}
+%	\end{table}
+
+
+
+
+\section{Results}
+
+\subsection{Model predictions}
+
+{\color{black}We first present some typical pendulum motions predicted by the model equation of motion.}
+\textcolor{black}{In Fig.~\ref{ModelResults}(a), we show a contour plot of the angular position $\theta$ vs time $t$  for continuous variation of $m^*$. We notice a clear asymmetry about $m^* = 1$ line, which separates the heavy cases from the buoyant cases. 
+%The oscillation frequencies are very different for comparable driving force ($|{F_B} - {F_g}|$) on the heavy ($m^* = 2$) and buoyant ($m^* = 0$) sides (see Fig.~\ref{ModelResults}(b)). 
+For instance, the oscillation frequency is slightly higher for a buoyant cylinder as compared to a heavy cylinder that has identical driving $|{F_B} - {F_g}|$. On the buoyant side ($m^* <1$), the oscillations damp faster with decreasing $m^*$, owing to the decreasing inertia. Other aspects of the pendulum motion are altered in going from $m^*>1$ to $m^*<1$. In Fig.~\ref{ModelResults}(b), we show the phase portraits of two cases, one buoyant~{\color{black}($m^* = 0.02$)} and other heavy~{\color{black}($m^* = 1.98$)}, with identical driving $|{F_B} - {F_g}|$.  {\color{black}The low mass-density ratio of $m^* = 0.02$ chosen here corresponds to a cylinder made from a very light material such as expanded polystyrene~(\cite{mathai2015wake}).} The buoyant pendulum with ($m^* = 0.02$) accelerates quickly, reaching a high angular speed in a short period of time. At the same time, owing to its low inertia, which in this case comes entirely from the fluid~(or $m_a^*$), the motion damps out quickly. Therefore, the peak angular displacement at first minimum $\theta_0$ is lower for the buoyant pendulum as compared to the heavy pendulum~($m^* = 1.98$), while the peak angular velocity reached $\omega_{peak}$ is higher for the buoyant cylinder.} 
+%These observations can be rationalized by taking just the buoyancy and added mass into account: the dimensionless oscillation frequency $f \propto \sqrt{\frac{|m^*-1|}{m^*+1}}$. 
+
+
+
+
+%
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.95\textwidth]{./Figures_reduced_pdfs/Figure4_SurfAndPhaseDiagram_finalversion.pdf}
+%	\caption{(a) Contour-plot of $\theta$ vs time $t$ and mass-density ratio $m^*$. (b) Phase portraits of the angular velocity $\omega_{pend}$ vs $\theta$ for $m^* = 0$ and $m^* = 2$ cases, with identical driving: $|F_B - F_g|$. (c)~Surface plot of (a). \textcolor{black}{(d)~Time to decay 90\% of the initial amplitude vs $m^*$. The datapoints (squares) give decay time obtained by numerically solving the full equation of motion~(eq.~\ref{EqtofMotion}).} }
+%	\label{ModelResults}
+%	\vspace{-.4 cm}
+%\end{figure}
+
+
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.99\textwidth]{fig3-eps-converted-to.pdf}
+	\caption{(a) Contour-plot of $\theta$ vs time $t$ and mass-density ratio $m^*$. (b) Phase portraits from numerical solution of eq.~\ref{EqtofMotion} showing the evolution of angular velocity $\omega_{pend}$ vs angular position $\theta$ for {\color{black}$m^* = 0.02$ and $m^* = 1.98$ cases.} Note that these cases were chosen  with identical driving: $|F_B - F_g|$. Phase portraits obtained for available experimental data~(not shown here) show similar behaviour.}
+	\label{ModelResults}
+	\vspace{0 cm}
+\end{figure}
+
+
+
+
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=0.99\textwidth]{./Figures_reduced_pdfs/Figure4_phaseportrait.eps}
+%	\caption{(a) Phase portraits from numerical solution of eq.~\ref{EqtofMotion} showing the evolution of angular velocity $\omega_{pend}$ vs angular position $\theta$ for $m^* = 0$ and $m^* = 2$ cases. Note that these cases were chosen  with identical driving: $|F_B - F_g|$. (b) Phase portraits obtained for the nearest available experimental data, with $m^* = 0.33$ and $m^* = 1.62$. The driving force $|F_B - F_g|$ is nearly the same for the two cases here. The basic shape of the curves remain similar to (a).}
+%	\label{Phase_portrait}
+%	\vspace{-.2 cm}
+%\end{figure}
+
+
+
+
+
+
+%Fig.~\ref{ModelResults}(c) shows the phase portraits of the angular velocity vs angular displacement for the heavy cases. The larger the $m^*$, the greater are the initial acceleration, the maximum angular speed achieved, and the number of oscillations to getting damped. 
+
+
+%The maximum amplitude evolution is given by:
+%	
+%	
+%	
+%	\begin{align}
+%\theta_m (t) = \frac{\theta_0}{1 + \mu (m^*) \theta_0 t} ~,
+%	\label{fastestdamp}
+%	\end{align}
+
+
+
+
+
+
+
+
+
+%\begin{figure} 
+%	\centering
+%	\vspace*{0 cm}
+%	\includegraphics[width=0.9\textwidth]{./Figures_reduced_pdfs/Figure6_FlowField_vm.eps}
+%	\caption{(a)Angular position $\theta$ vs time t for $m^* = 4.98$. The red curve -- model prediction based on Eq. (\ref{EqtofMotion}) for $C_D =1.2$, $m_a^* =0.53$, and $\mu_f =0.2$. (b) shows zoom-in of the second swing. The model overpredicts the maximum amplitude~(point marked as \textit{(r)} in (a) \& (b)).  (c) -- (e) Normalised horizontal velocity $U_x/v_0$~(\textit{left}) and normalised vorticity $\omega/(v_0/D)$~(\textit{right}) at the three instants marked in subfigure~(a) as \textit{(p)}, \textit{(q)}, and \textit{(r)}, respectively. Here, $v_0$ is the measured maximum speed of the pendulum.}
+%	\label{PIV}
+%	\vspace{-.4 cm}
+%\end{figure}
+
+
+
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=.5\textwidth]{./Figures_reduced_pdfs/Figure7_Correction_f.eps}
+%	\caption{Correction factor $E_r(t)$ vs $\theta/\theta_0$ for the return swing of the first oscillation for different $m^*$. Initially, $E_r(t) > 1$, i.e. the wake effect on the pendulum's motion is significant. Inset: percentage error in the predicted first maxima by the original model, and that by the revised model.}
+%	\label{Correction}
+%		\vspace{-.4cm}
+%\end{figure}
+
+
+\subsection{Model vs experiment}
+
+%Fig.~\ref{ModelResults} showed some key differences in the dynamics of heavy and buoyant pendulums as predicted by the model equation of motion. However, a one to one comparison with experiment is necessary to establish the validity of the predictions. 
+\textcolor{black}{We now present a one-to-one comparison between the model and experiment.  In Fig.~\ref{f&a}(a), we show the  normalised frequency of oscillation. As expected, the frequency of oscillation has a clear dependence on the mass ratio $m^*$. When the pendulum mass density is close to the fluid density~(or $m^* \to 1$), the frequencies are low. For heavy cylinders, the frequency increases with $m^*$, and asymptotically approaches the frequency of a large amplitude simple pendulum $f^*_{\pi/2}$. The predictions of the model~(eq.~\ref{EqtofMotion}) are given by the blue and red dashed curves.} %The model provides a fair prediction of the oscillation frequency for both heavy and buoyant cylinders. 
+%Here we have used a constant drag coefficient $C_D \approx 1.2$ from literature, which is based on the mean drag coefficient for a cylinder at the Reynolds number in our experiments. 
+The blue curve corresponds to the prediction when the potential flow added mass $m_a^* = 1.0$ is used. This slightly underpredicts the oscillation frequency. A best fit to the data is obtained for $m_a^* = 0.53$. Thus, for $C_D =1.2$, $m_a^* =0.53$ and $\mu_f = 0.2$, the  frequency predictions of the model are in good agreement with the experiments for both buoyant and heavy cylinders.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.93\textwidth]{fig4-eps-converted-to.pdf}
+	\caption{ (a) Normalized oscillation frequency $f^*$ from experiment and model~(eq.~\ref{EqtofMotion}). Here, $f$ is averaged over the first four oscillations, and normalised by $f_{sp} = \frac{1}{2 \pi} \sqrt{\frac{g}{L}}$. {\color{black} For the full equation of motion, using potential flow added mass $m^*_a = 1.0$ leads to an underprediction of $f^*$. For a reduced $m^*_a = 0.53$, the predictions of eq.~\ref{EqtofMotion} match well with the experiments.  Remarkably, an undamped model for small amplitude simple pendulum, and with the same $m^*_a = 0.53$, reproduces the curve, providing evidence that the nonlinear drag plays only a weak role in the oscillation frequency $f^*$. The green curve shows that an undamped model with large initial amplitude $\theta_0 = \pi/2$ underpredicts the oscillation frequency.} (b) Peak pendulum deceleration, $a_{max}$ vs $m^*$.}
+	\label{f&a}
+	\vspace{-.20 cm}
+\end{figure}
+
+It is interesting to compare the predictions of the model~(Eq.~\ref{EqtofMotion}) when the drag and the bearing friction are ignored altogether. The solid green curve in Fig.~\ref{f&a}(a) shows the frequency prediction for large amplitude oscillations when the potential flow added mass alone is accounted for. This underpredicts the oscillation frequency. However, when the same undamped model is used for small amplitude oscillations, the predictions improve significantly~(see solid blue curve). This is because the nonlinear drag is highly effective in quickly reducing the oscillation amplitudes to modest values. A further improvement is obtained upon using a reduced added mass of $m^*_a = 0.53$. \cite{neill2007pendulum} had noted that linear drag had only a small effect on the oscillation frequency.  Here we found that the same holds for the nonlinear drag term.
+
+%While eq.~\ref{eq_addedmass} underpredicts the frequency for heavy pendulums, its  predictions are close to experiment for buoyant pendulums. This suggests that for buoyant pendulums, the dynamics is governed primarily by the buoyancy and added mass, with the drag and friction forces playing only  secondary roles. 
+
+The frequency of oscillation represents an averaged quantity for the pendulum motion considered here. A  more sensitive quantity would be the peak deceleration $a_{max}$ of the oscillating pendulum, which signifies the instant when the largest force acts on the pendulum. 
+%$a_{max}$ was calculated in experiment by taking time derivatives of $\theta(t)$.
+%We estimated $a_{max}$ using the $\theta$ vs $t$ data for the cylinder.
+Following the initial instants of release of the cylinder, a peak in the deceleration is experienced when the cylinder reaches the end of the first swing, i.e. points such as (p1) \& (p2) in Fig.~\ref{PendulumSwing}(b).  In Fig.~\ref{f&a}(b), we compare the experimentally measured peak deceleration with the predictions of the model~(eq.~\ref{EqtofMotion}). The peak deceleration changes significantly with $m^*$, and the model predictions are in reasonable agreement with the experimental measurements. Interestingly, the value of the added mass coefficient has only a minor role in $a_{max}$. Instead, the fluid drag has a leading role in the peak deceleration of the pendulum.
+Thus, the frequency curve~(Fig.~\ref{f&a}(a)) provides a probe that singles out the added mass effect, while the deceleration curve~(Fig.~\ref{f&a}(b)) probes mainly the nonlinear drag's effect.
+
+
+
+
+
+Figure~\ref{ModelResults}(a) also provides insight into an interesting aspect of the oscillation decay for heavy pendulums. For $m^* > 1$ cases, the oscillations decay quicker with increasing $m^*$. This occurred despite the higher inertia of heavier pendulums, and seems counter-intuitive based on our common knowledge of pendulums oscillating in air.
+However, this trend cannot continue to large $m^*$, since in the limit of very large inertia ($m^* \gg 1$) the decay rate should reduce with $m^*$. This implies the existence of an optimal heavy pendulum ($m_{\text{opt}}^*>1$) for which one observes the quickest damping.  We will provide an approximate model to predict $m^*_{\text{opt}}$, corresponding to the quickest damped pendulum.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.95\textwidth]{fig5-eps-converted-to.pdf}
+	\caption{\textcolor{black}{(a) Time to decay 60\% of the initial amplitude $\tilde{\tau}_{60\%}$ vs mass density ratio $m^*$. (b)~Amplitude envelope $\theta_m$ vs $m^*$ after a time $\tau_{ref} = 3 \pi \sqrt{L/g}$. For the heavy pendulums, an optimal $m^*$ and optimal $f^*$ are visible in both experiment and simulations. (c) $\tilde{\tau}_{60\%} $ vs normalised oscillation frequency $f^* = f/ f_{sp}$, where $f_{sp} = \frac{1}{2 \pi} \sqrt{\frac{g}{L}}$. (d) $\theta_m$ vs $f^*$ at $\tau_{ref} = 3 \pi \sqrt{L/g}$.  Note that (c) \& (d) show heavy cases only. The basic model overpredicts the decay time and amplitude envelope for all cases.} }
+	\label{tau_60_theta_3by2T_L}
+	\vspace{-.2 cm}
+\end{figure}
+
+\subsection{Amplitude decay}
+
+{\color{black}
+	The initial damping is determined mainly by the nonlinear drag; therefore, we ignore the bearing friction force in the equation of motion (eq.~\ref{EqtofMotion}). This yields: $m_{eff}^* \frac{d^2 \theta}{d\tilde{t}^2} = - k \sin{\theta} - c \left| \frac{d \theta}{d \tilde{t}}\right| \frac{d \theta}{d \tilde{t}}$. In the absence of fluid drag~($c = 0$), the solution is given by $\theta (\tilde{t}) = \theta_0 \cos{\omega_0 \tilde{t}}$, with $\omega_0 = \sqrt{k/m_{eff}^*}$, and $\theta_0$ the initial angle. If the damping constant $c$ is small such that the pendulum amplitude is approximately constant over one period, we can assume that the solution is still approximately the same, but with a maximum amplitude $\theta_m \big{(}\tilde{t}\big{)}$ which slowly decays in time. Consequently, the energy in the oscillations evolves as $E\big{(}\tilde{t}\big{)} \approx \frac{1}{2} k \ \theta_m \big{(}\tilde{t}\big{)}^2$.
+	The overall decay rate of the energy can be equated to the average work done by the drag force over one period $T = 2\pi /\omega_0$: 
+	
+	\begin{align}
+	\frac{d E}{d \tilde{t}} = \frac{\omega_0}{2 \pi} \int_{0}^{\frac{2 \pi}{\omega_0}} F_D\big{(}\tilde{t}\big{)} \dot{\theta} \big{(}\tilde{t}\big{)} d\tilde{t}
+	\label{energydamp}
+	\end{align}
+	
+	Using $E\big{(}\tilde{t}\big{)} \approx \frac{1}{2} k \ \theta_m \big{(}\tilde{t}\big{)}^2$ and $F_D = - c \ \dot \theta^2$, we obtain a differential equation for the slowly varying envelope $\theta_m (t)$ of the form: $\frac{d\theta_m}{d\tilde{t}} \approx - \mathcal{B} (m^*)  \theta_m^2$, where $\mathcal{B} (m^*) = \frac{4 c}{3 \pi} \sqrt{\frac{|m^* -1|}{(m^* +m_a^*)^3}}$.  This yields the time to decay to a certain fraction ($1- \alpha$) of the initial amplitude $\theta_0$ as $\tilde{\tau}_{(1-\alpha)} = \frac{\alpha/(1-\alpha)}{\theta_0 \ \mathcal{B}(m^*) }.$
+	%	\begin{align}
+	%	\frac{d\theta_m}{d\tilde{t}} \approx - \mathcal{B} (m^*) \ \theta_m^2,
+	%	\label{thetamaxevolution}
+	%	\end{align}
+	%	\begin{align}
+	%\tilde{\tau} = \frac{\alpha/(1-\alpha)}{\theta_0 \ \mathcal{B}(m^*) },
+	%	\label{decaytime}
+	%	\end{align}
+	
+	
+	
+	%	
+For $m^* > 1$, and using the best fit $m_a^* =0.53$, $\mathcal{B}$ has a maxima at $m_{\text{opt}}^* \approx 1.75$. In other words, for a given $\theta_0$ the damping is the quickest when the pendulum is nearly twice the density of the fluid. \textcolor{black}{Alternately, one could plot the amplitude envelope $\theta_m$ after a dimensionless time $\tilde{{\tau}}_{ref} \equiv \frac{\tau_{ref}}{\sqrt{L/g}}$ for different $m^*$. This yields an expression $\theta_m = \frac{1}{\mathcal{B}(m) \tilde{\tau}_{ref}+  (1/\theta_0)}$. In Fig.~\ref{tau_60_theta_3by2T_L}(a)--(b) we show comparisons between the model and experiment for $\tilde{\tau}_{60\%}$ and $\theta_m$, respectively, vs mass-density ratio $m^*$.  The black symbols denote the model predictions by solving the full equation of motion~(eq.~\ref{EqtofMotion}). The black curve shows the prediction by the approximate model described above. Note that we first fit an envelope to the amplitude decay, using the maxima~(peaks) of $\theta$ vs $t$ curve, i.e a curve that grazes through the maxima of the amplitude curve. The optimal damping at $m^*_{\text{opt}} \approx 1.75$ is clearly visible in both the simulations and the reduced model. The blue data points are from experiment. A similar behaviour with a minima at an optimal $m^*$ is visible in the experiments. At the same time we note that both $\tilde{\tau}_{60\%}$ and $\theta_m$ are lower in the experiment. Further, the optimal $m^*$ value in experiment is slightly lower as compared to the model predictions.}  For very heavy pendulums ($m^* \gg 1$), the damping $\mathcal{B} \propto 1/m^*$, which leads to the linear relation $\tilde{\tau}_{60\%} \propto m^*$. This is also the commonly encountered situation for pendulums oscillating in air.
+
+\textcolor{black}{The above discussed non-monotonic damping behaviour may be understood as the interplay between the higher speeds achieved by the heavier pendulums, and the nonlinear growth of the drag in proportion to the square of the speed.}
+	\textcolor{black}{The phenomenon observed here may hold some analogies to the added damping for oscillating cylinders~\citep{dong1978effective}, which is usually expressed in terms of the oscillation frequency. Therefore, in Fig.~\ref{tau_60_theta_3by2T_L}(c)--(d)  we plot $\tilde{\tau}_{60\%}$ and $\theta_m$, respectively, as a function of the normalised oscillation frequency $f^*$. The $\theta_m$ plot shows a clear minima at $f^* \approx 0.6$. Similar to the $m^*$  plots~(Fig.~\ref{tau_60_theta_3by2T_L}(a)--(b)), the model overpredicts both $\tilde{\tau}_{60\%}$ and $\theta_m$, which occurs despite using the optimal added mass coefficient $m_a^* = 0.53$ determined earlier. Clearly, the origin of these must lie in the inadequacy of the simplified drag model used~($C_D =1.2$). Nevertheless, the constant $C_D$ case can be viewed as the most basic model, which captures many essential features of the damping. Using a higher value of $C_D$ seems the logical choice. In the following we will show that accounting for a few phenomenological effects can improve the predictions. We will introduce these modifications to the model and equation of motion.}
+	
+
+{\color{black} \subsection{Drag corrections}}
+
+
+\textcolor{black}{Firstly, the influence of the instantaneous Re on $C_D$ can be taken into account.} This leads to a faster decay at small amplitudes (or small $v_p$), since $C_D$ is higher at lower Reynolds numbers~\citep{hoerner1965fluid}. Secondly, the forces due to vortex shedding behind the cylinder could be modelled into the drag term. The drag coefficient in the presence of vortex shedding may be approximated as $C_{Dvs} = C_D (1 + k \sin{\omega_{vs} t} )$, where $k \sim 0.1$~\citep{govardhan2000modes}, and $\omega_{vs} = 2 \pi \ \text{St} \ v_p/D$ is the vortex shedding frequency. Here St is the Strouhal number~\citep{govardhan2005vortex}, $v_p$ the cylinder velocity and $D$ the cylinder diameter. This leads to a marginal reduction in the predicted peaks of the oscillations.
+
+Fig.~\ref{PIV}(a)--(b) compares the experiment and model predictions for the angular position~$\theta$ vs time $t$ for a heavy pendulum with $m^*$ = 4.98. 
+\textcolor{black}{The oscillation frequency matches well between the experiment and the model. 
+%The angular position predictions of the model agree with the experiments up to the end of the first swing~(point {\it(q)} in Fig.~\ref{PIV}(a) \& (b)). These are consistent with our earlier observation of the matched frequencies and peak decelerations~(shown in Fig.~\ref{f&a}(a) \& (b)). 
+However, deviations are seen in the second peak of oscillation, marked as {\it (r)} in Fig.~\ref{PIV}(b).  The deviation persists for all of the subsequent oscillations.} This suggests that the major factor causing the deviations between the model and experiment is still missing in the equation of motion.
+
+%We plot the time evolution of angular position~($\theta$) for one of  the heavier pendulums with $m^*$ = 4.98~(see Fig.~\ref{PIV}(a)). For comparsion, we provide the predictions of the model for $C_D = 1.2$, $m_a^* =0.53$, and $\mu_f = 0.2$. 
+
+
+
+
+\begin{figure} 
+	\centering
+	\vspace*{0 cm}
+	\includegraphics[width=0.9\textwidth]{fig6-eps-converted-to.pdf}
+	\caption{(a)Angular position $\theta$ vs time t for $m^* = 4.98$. The red curve shows the model predictions. (b) shows zoom-in of the second swing. The model overpredicts the maximum amplitude~(point marked as \textit{(r)} in (a) \& (b)).  (c) -- (e) Normalised horizontal velocity $U_x/v_0$~(\textit{left}) and normalised vorticity $\omega/(v_0/D)$~(\textit{right}) at the three instants marked in subfigure~(a) as \textit{(p)}, \textit{(q)}, and \textit{(r)}, respectively. Here, $v_0$ is the measured maximum speed of the pendulum.}
+	\label{PIV}
+	\vspace{-.0 cm}
+\end{figure}
+
+\subsection{PIV and wake corrections}
+To understand the origin of the deviation in the second and subsequent peaks of the oscillations, we employed high-speed PIV to quantify the flow around the cylinder during its motion. 
+%The normalized horizontal velocity, and the normalized vorticity plots shown in Fig.~\ref{PIV}(c), (d), and (e) correspond to the time instants marked as {\it(p)}, {\it (q)}, and {\it (r)}, respectively, in Fig.~\ref{PIV}(a).
+%	Two of the indicators of the quality of the predictions on the dynamics of underwater cylindrical pendulums of the theoretical model are $f$ of and the maximum acceleration $a_{max}$ achieved by the pendulums. The measured values and the theoretical predictions of the two are presented in Fig.~\ref{f&a}. Note that in the figure, $f$ is represented by the reduced frequency $f^* = f / f_{sp} = f / [\sqrt{g/L}/(2\pi)]$, where $f_{sp}$ is the frequency of the corresponding simple pendulum.
+%	Examination of Fig.~\ref{f&a}a revealed that $f^*$, thus $f$, was rather poorly predicted by the model using the parameters obtained from literature, i.e. $m_a^* = 1$, $C_D = 1.2$ and $\mu_f = 0.2$. To improve the prediction, $m_a^*$ was varied. It was found that the predictions acquired using a value of $m_a^* = 0.53$ agreed reasonably well with the experimental measurements of $f$. As a side note, this discrepancy could be due to the fact that the flow experienced by the pendulum was unsteady. A similar conclusion was reached when $a_{max}$ of the various cases were considered, implying that the model based on these revised parameters should predict the trajectory of the pendulum well, as $a_{max}$ could be viewed as a representation of the pendulum's trajectory. With the adequacy of the model in the form of Eq. (\ref{EqtofMotion}) established, a graph of $\theta$ against $t$ for the experimental measurements and the curve-of-best-fit with greater weight given to the first minimum based on Eq. (\ref{EqtofMotion}) for the heaviest case, i.e. $m^*$ = 4.98, depicted in Fig.~\ref{PIV}a was plotted.
+%	
+% \textcolor{blue}{The green dashed curve shows the frequency prediction if only the added mass is taken into account. Presumably, the predictions are in agreement for buoyant pendulums, since here $m_a$ is the dominant influence. However, for heavy pendulums, this grossly undepredicts the frequency of oscillations. In the Stokes drag regimes investigated in prior studies, the measured oscillation frequencies were in fact marginally lower than the added mass model. Thus we witness here a situation where nonlinear drag contributes to an increase in the frequency, while linear drag would have decreased the frequency, compared to the model that takes only the added mass into account. This could have important implications in large amplitude pendular systems.}		
+%	While reasonably good agreement was exhibited between the best-fit curve based on Eq. (\ref{EqtofMotion}), which was obtained with a greater weight given to the first minimum, and the experimental data in general, as illustrated in the inset, which showed the first maximum in greater detail, the model still over-predicted the magnitude of the first maximum $\theta_1$. In particular, it was viewed that by matching the predicted $\theta_1$ to the observed $\theta_1$, the deviations manifesting in the subsequent stationary points would be significantly reduced. This was also the case for the other cases tested. To understand the origin of the inaccuracy of $\theta_1$, PIV was employed to visualise the flow field during the first oscillation for several of the cases tested. The horizontal component of the flow velocity $U_x$ normalised with the maximum speed of the pendulum in the first cycle $v_0$, and the vorticity $\omega$ of the flow field normalised with $v_0/D$ at several instants during the first oscillation for the heaviest case, i.e. $m^* = 4.98$, is included as Fig.~\ref{PIV}b - e.
+Fig.~\ref{PIV}(c) shows the normalised velocity and vorticity fields at a time instant when the cylinder is moving towards the right during its first swing (point {\it(p)} in Fig.~\ref{PIV}(a)). The wake behind the cylinder is clearly visible, while the flow ahead of  the cylinder has negligible vorticity i.e. nearly irrotational~(Fig.~\ref{PIV}(c)(\textit{right})). The wake is unsteady and is expected to induce unsteady forces on the cylinder during its swing.
+
+
+
+One can expect that the mean drag on the cylinder at this instant is fairly predicted  by the nonlinear drag term $F_D$ in the equation of motion~(eq.~\ref{EqtofMotion}). Consequently, the first swing of the pendulum is captured well by our model.
+%As the cylinder travelled, it formed a wake. Similar to Neill's group's observation that a spherical pendulum moved into its own wake,\cite{Neill} after the cylinder reached the first minimum and started moving to the left as in Fig.~\ref{PIV}c, it travelled through its wake. 
+Next we focus at a later instant in time~(point {\it (q)} in Fig.~\ref{PIV}(a) \& (b)), when the cylinder has just completed its first swing and is returning to the left. Fig.~\ref{PIV}(d) shows the velocity and vorticity fields at this instant. In this case, however, the cylinder is moving towards a disturbed background flow. The horizontal velocity plot~(see \textit{left-side} plot of Fig.~\ref{PIV}(d)) indicates that the cylinder faces an incoming flow to the right. The effect of this disturbed flow is not taken into account in our model. Therefore, as the cylinder travels further through the disturbed flow, it experiences a greater resistance than what is predicted by the drag term in our model. Fig.~\ref{PIV}(e) shows the flow field at the instant when the cylinder completed its reverse swing~(point {\it (r)} in Fig.~\ref{PIV}(a) \& (b)). By this time, the original wake in front of the cylinder appears to have dissipated. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.97\textwidth]{fig7-eps-converted-to.pdf}
+	\caption{\textcolor{black}{(a) Schematic showing the estimation of mean wake velocity $U_f$ from a sample PIV flow field. A sample video of the PIV flow field is provided as supplemental material. $U_f$ is computed inside a $2D \times 2D$ window located at a selected angular position $\theta_{sel}$.  (b) Decay of wake velocity $U_f$ in time at various angular positions $\theta_{sel}$.  $t_{pass}$ is the time when the cylinder passed $\theta_{sel}$. The initial oscillation of the wake shows clear indication of vortex shedding. However, after this phase the wake decay is smooth. Inset shows the same plot on log-log scale. While at short times $U_f$ shows oscillations, the long-time decay shows a power law decay.}}
+	\label{Wakedecay_time}
+	\vspace{-.0cm}
+\end{figure}
+
+\textcolor{black}{One of the approximations of our model is that the cylinder velocity $v_p$ nearly equals the relative velocity $v_{rel}$ between the cylinder and the flow. However, the PIV snapshots reveal a strong mean flow after the first swing of the pendulum. This disturbed flow in the wake could result in $v_{rel}$ deviating significantly from $v_p$, which is the likely reason for the overprediction of the maxima of the second and subsequent oscillations. We look at the mean fluid velocity $U_f$ at different angular positions in the cylinder wake. Fig.~\ref{Wakedecay_time}(a) shows details of the $2D \times 2D$ window at a selected angular position $\theta_{sel}$ used in the estimation of $U_f$. The evolution of $U_f$ in time $t - t_{pass}$ is shown in Fig.~\ref{Wakedecay_time}(b). Here, $t_{pass}$ is the time when the cylinder passed $\theta_{sel}$.} 
+\textcolor{black}{The wake decay shows some interesting characteristics. Initially, $U_f$ oscillates, which is a clear indication of vortex shedding in the cylinder wake during the initial moments after the cylinder has passed $\theta_{sel}$. We also see variations in the peak for different angular positions $\theta_{sel}$. This part of the curve is highly unsteady and difficult to model. However, later in time $U_f$ decays in a gradual and monotonic way. The inset to the figure shows the same plot on log-log scale. The long-time decay appears to follow a power law decay.}
+
+\textcolor{black}{Several studies have addressed the decay of wakes for rising and falling particles~\citep{wu1993sphere,bagchi2004response}. These revealed many aspects of the temporal and spatial decays of wakes behind spheres in quiescent fluids, and in turbulent flows. \cite{almeras2017experimental} disentangled the wake decay behind rising bubbles into near wake and far fields, with their characteristic decay rates. The wake decay observed in Fig.~\ref{Wakedecay_time} also represents the combined effect of the local decay of the wake and the advection of the wake with a velocity $U_f$, i.e. $\frac{d{U_f}}{dt} = \frac{\partial{U_f}}{\partial t} + \frac{U_f}{L} \frac{\partial{U_f}}{\partial \theta}$. These terms can be very difficult to disentangle for the wide range of $m^*$~(or Re) in our experiments. Alternatively, one can look at the wake velocity at locations just upstream of the cylinder during its return swing. Fig.~\ref{Wakedecay_thetanorm}(a) shows the normalised wake velocity $\tilde{U}_f$ as a function of normalised angular position $\theta^*$ for four different mass ratios.  Here  $U_f$ is normalised by the pendulum speed at equilibrium position of each $m^*$ case, thus representing a characteristic speed for that $m^*$. For the heavier pendulums, $v_{p0}$ is comparable to the gravitational velocity scale $v_g$, but it deviates as $m^*$ is reduced. Similarly, the maximum angle reached by the pendulum at the end of its first swing $\theta_{max}$~(point $(q)$ in Fig.~\ref{PIV}(a)(b)) is used in the normalisation for $\theta$. For clarity, we also show the arrow of increasing time, indicating that the return swing starts at $\theta^* \to 1$. With these normalisations the data show a reasonable collapse. It is remarkable that the data collapse despite the large variation in $m^*$: [1.15, 4.98], which corresponds to a Reynolds number variation of almost a decade (Re $\in$ [4000, 34000]). At the initial instant, i.e. when $\theta^* \to 1$, the cylinder sees a large incoming flow velocity. As the pendulum swings back to $\theta^* \sim 0$, the wake velocity has almost completely decayed. Beyond this we observe a surprising increase in the incoming flow velocity. This increase arises from the cylinder wake during the first swing, where the pendulum had its highest swing velocity. Since the cylinder velocity at this position was large, the wake has not decayed completely.}
+	
+	
+	 We obtain an approximate fit for the variation of $\tilde{U}_f$ vs $\theta^*$~(see Fig.~\ref{Wakedecay_thetanorm}(a)).  {\color{black} With the wake flow modelled using $\tilde{U}_f(\theta^*)$ shown above, we can include the effect of the incoming flow through a modified drag term: $ F_{Df} \approx \frac{1}{2} \rho_f A_p C_D \ (v_p - U_f)^2$, where $U_f = \tilde{U}_f \ v_{p0}$. This can be implemented as a modified torque  that replaces the original drag term in eq.~\ref{EqtofMotion}. The modified equation of motion reads: 
+	
+	\begin{align}
+	m_{eff}^* \frac{d^2 \theta}{d\tilde{t}^2}= - k \sin{\theta} \ - \ c \left| \frac{d \theta_{rel}}{d \tilde{t}}\right| \frac{d \theta_{rel}}{d \tilde{t}} \ - \ h \left | \cos{\theta} \right | \ \text{sgn} \left( \frac{d \theta} {d\tilde{t}} \right)
+	\label{EqtofMotion_mod},
+	\end{align}
+	where the relative angular velocity $ {d\theta_{rel}}/{d\tilde{t}} = {(v_p - U_f)}/{\sqrt{L g}}$. Note that Eq.~\ref{EqtofMotion_mod} requires no new input parameters, and works for the full range of Reynolds number in our experiments, i.e. $\text{Re} \in [4000, 34000]$.  The improvements in the predictions of the amplitude decay are presented in Fig.~\ref{Wakedecay_thetanorm}(b), which shows the error in the predicted amplitude of the second peak of oscillation for all mass ratios ($m^* >1$) studied.} The predictions of the revised model are shown along with those of the original model. Accounting for the wake flow results in significant improvement in the second peak for all $m^*$ cases. The mean error reduces from $\sim$ 14.8 \% to 3.8 \% after including the influence of the wake flow into the equation of motion. These results demonstrate the importance of fluid-structure coupling for pendulums oscillating at large amplitudes in viscous fluids.} 
+
+
+
+
+%We estimate the possible deviations in the drag term due to the usage of $v_p$ instead of $v_{rel} = ({U_f} - {v_p})$. Here, ${U_f}$ was calculated as the mean fluid velocity in a rectangular window with dimensions $D\times D$, at a distance $1.5D$ ahead of the cylinder.  In Fig.~\ref{Correction}, we plot a correction factor $E_r(t)$ vs $\theta/\theta_0$ for the return swing of the pendulum for various mass ratios, where $\theta_0$ is the peak amplitude of the return swing. During the intial phase of the return swing, $E_r$ exceeds unity for all the cases, suggesting that the effect of the disturbed wake on the pendulum's motion is significant.  With time, $E_r$ decreases, and the effects due to the disturbed flow become negligible. The inset to Fig.~\ref{Correction} quantifies the percentage error in the peak amplitude prediction for pendulums of different $m^*$. The two cases shown are the predictions of the original model, and those of a corrected model, which uses ${v_{rel}}$ in the drag term. The error in the first maxima of oscillation is reduced due to the inclusion of the correction in the drag term. While the choice of the window size for estimating ${U_f}$ was rather arbitrary, the above analysis has provided a physical understanding of the origin of the history effect.
+
+
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{fig8-eps-converted-to.pdf}
+	\caption{\textcolor{black}{(a)~Decay of the normalised wake velocity $\tilde{U}_f$ vs normalised angular position $\theta^*$. The wake velocity is normalised by the pendulum velocity at equilibrium position during the first swing $v_{p0}$, and the angular position is normalised by the peak angular position at the end of the first swing $\theta_{max}$. Both $v_{p0}$ and $\theta_{max}$ can be found by solving eq.~\ref{EqtofMotion}, and do not require any input from PIV. The normalisation leads to a reasonable collapse of the data despite the wide variation in Reynolds number from Re~$\sim$~4000~(for $m^* =1.16$) to  Re~$\sim$~34000~(for $m^* =4.98$). Note that the arrow of time is pointing opposite to the arrow of $\theta$, as indicated in the (a). (b)~Error (\%) in the peak amplitude after including the history force due to wake flow. The coloured bands show the error ranges for the original and revised model. The dashed lines show the mean errors for the two models, which decreases from 14.8\%~(for the original model) to 3.8\%~(for the revised model).}}
+	\label{Wakedecay_thetanorm}
+	\vspace{-.0cm}
+\end{figure}
+%	with some of the curves having negative $E(t)$ near the end of the cycle. This could be explained with the aid of the flow field acquired -- initially, when the pendulum moved towards $\theta_1$ from $\theta_0$, there was a large flow in the direction opposite to its direction of travel; later, this flow dissipated. The negative $E(t)$ near the end of the cycle represented the flow in the same direction as the pendulum's direction of travel after the wake dissipated as part of the flow which manifests naturally when an object moves in an originally stationary fluid. Therefore, both the flow field and the calculated $E(t)$ indicated that the wake of the cylinder did affect the pendulum's motion and a correction should be applied.
+%	
+
+%spatially averaged velocity at an upstream distance of $1.5 D$ from the cylinder. The choice of the area for spatial average was rather
+
+%	To examine the significance of this effect, the importance of ${v_{rel}}$, which is, with ${U_f}$ representing the average flow velocity, given by ${v_{rel}} = {v_p} - {U_f}$, in the return swing of the first oscillation was studied. In this research, to ensure the flow opposite to the direction of travel of the cylinder as it commenced movement from $\theta_0$, i.e. its wake, was properly captured in ${U_f}$, ${U_f}$ was defined as the mean flow velocity in a rectangular box with dimensions $0.5D\times2D$ with its centre at a distance of $1.25D$ tangentially in front of the centre of the pendulum bob in the direction of motion of the cylinder and its long side parallel to the pendulum arm. With this, assuming $v_{mean}$ represented the average speed of the cylinder as it swung towards $\theta_1$ from $\theta_0$, $E(t) = (v_{rel}^2 - v_p^2)/v_{mean}^2$ against $\theta/\theta_0$ for the return swing of the first oscillation of several heavy cases were plotted. The graph is shown in Fig.~\ref{Correction}.
+
+%	
+%	To incorporate the effect of the wake into the model, a derivation identical to that used to obtain Eq. (\ref{EqtofMotion}) was considered, except in the term representing ${F_D}$, ${v_p}$ was replaced by ${v_{rel}}$. A revised equation of motion was thus obtained. Using the values of $m_a^*$, $C_D$ and $\mu_f$ obtained through fitting the original equation of motion, i.e. Eq. (\ref{EqtofMotion}), to the experimental data with greater weight placed on the first minimum, together with the flow field data obtained through PIV, the new equation of motion was applied to the return swing of the pendulum's first oscillation. For the cases shown in Fig.~\ref{Correction}, the improvement of the model's prediction of $\theta_1$ due to the correction is shown in Fig.~\ref{PercentError}.
+
+%	\begin{figure}[h]
+%		\centering
+%		\includegraphics[]{Figure8_PercentageError.eps}
+%		\caption{Plot of the absolute values of the percentage deviation of the predicted $\theta_1$ evaluated using the original model based on Eq. (\ref{EqtofMotion}) and the revised one in which ${U_f}$ was accounted for from the measured $\theta_1$. The aforementioned deviations for all the heavy cases where PIV was conducted were reduced by the correction.}
+%		\label{PercentError}
+%	\end{figure}
+
+
+
+%Yet, as depicted by the vorticity fields in Fig.~\ref{PIV}, in reality, the flow was turbulent. While this model could refine the predictions regarding the extreme positions of the heavy cases, the same could not be said for the buoyant ones. Due to the presence of the oppositely directed incoming flow and the high sensitivity of buoyant pendulums to disturbances due to its reduced inertia, using ${v_{rel}}$ in ${F_D}$ immediately at $\theta_0$ would lead to the prediction that the pendulum would swing beyond $\theta_0$ before reversing its direction of motion. Thus, the correction used for heavy pendulums failed to apply for buoyant pendulums. In fact, judging from the PIV images, the author was inclined to conclude that the flow around underwater pendulums is complex.
+
+\vspace{-.5 cm}
+
+\section{Conclusions and Discussion}
+
+
+In this work, we have studied  the large amplitude oscillations of heavy and buoyant cylindrical pendulums in water.  The oscillation frequency and peak deceleration of the pendulum depend on the mass-density ratio $m^*$. Accounting for buoyancy and added mass alone, as done in previous investigations~\citep{neill2007pendulum}, does not  provide a complete picture of the dynamics.  We have developed a basic theoretical model, which accounts for  the nonlinear drag force and the bearing friction in addition to the buoyancy and the added mass. 
+With the inclusion of these terms, the model predictions are in reasonable agreement with the experimental observations for a wide range of mass ratios. The added mass coefficient in experiment is found to be $m_a^* = 0.53$, i.e. lower that the two-dimensional~(2-D) potential flow value for a cylinder. \textcolor{black}{A reduced $m_a^*$ as compared to the 2-D potential flow added mass can be expected, given that the flow is viscous and three-dimensional, and also due to the finite span of the pendulum.  This result is consistent with existing literature on oscillating bodies in viscous fluids~\citep{dong1978effective,konstantinidis2013added,koo2015simplified}.}
+%Moreover, $m^*_a =1.0$ is for an ideal two-dimensional flow. In reality, the pendulum is of finite length, and the cylinder Reynolds number high enough that the flow in the wake is turbulent, i.e. three-dimensional.
+
+%While the oscillation frequency and peak deceleration are  captured well, the model overpredicts the peak oscillation amplitudes for the second and subsequent oscillations.  
+%	Through investigating the motion of both buoyant and heavy cylindrical pendulums in water, it was found that $f$ and the general sense of oscillation in terms of $\theta(t)$ were reasonably well predicted using a simple model which neglected the actual flow around the pendulum and was based on Newton's Second Law in angular form with $C_D = 1.2$, $m_a^* = 0.53$ and, for the pendulum used, where the contact between the moving and the stationary part of the pivot was steel, $\mu_f = 0.2$. Yet, simply employing this model would lead to over-prediction of $\theta_1$. To remedy this, for heavy pendulums, ${v_{rel}}$ should be considered in ${F_D}$ during the second-half of the pendulum's first cycle, where the flow velocity considered ${U_f}$ is the average flow velocity in a rectangular region whose centre is located at a distance of $1.25D$ in front of the centre of the pendulum bob in the direction of motion of the pendulum, and with dimensions $0.5D\times2D$ with its long side parallel to the pendulum arm. Nonetheless, owing to the sensitivity of buoyant pendulums to external forcings, and the fact that the flow around underwater pendulums is complex, further research is required to develop a model to correct the over-prediction of $\theta_1$ by the original model for buoyant pendulums.
+%	
+The theoretical model presented here provides fair predictions of the oscillation frequency and peak decelerations for a wide range of $m^*$. However, the model overpredicts the peak oscillation amplitudes for the second and subsequent oscillations.  \textcolor{black}{Introducing a Reynolds number dependent drag, along with vortex shedding forces, can provide marginal improvements to the model predictions. While modelling $C_D$ as a function of Re improves the later oscillations, the vortex shedding term mainly influences the first oscillation.}
+%In addition, the flow and pendulum motion were assumed to be predominantly two-dimensional flow. This assumption of the 2D flow was used in proposing $m_a^* =1.0$ in the first place. However, although the pendulum span is large~($W/D \approx 10$), one cannot entirely neglect end effects. 
+%Another source of uncertainty comes from the modeling of the bearing friction. 
+%We estimated a mean friction coefficient from oscillations in air. 
+
+\textcolor{black}{Particle image velocimetry~(PIV) measurements have revealed that the major factor causing the deviations between experiment and the simplified model is the disturbed flow surrounding the cylinder, which was not accounted for in the original model. We have used insights from PIV measurements to obtain a simple model for the incoming wake flow for a wide range of mass ratios. With this history force modelled, the revised model predictions are significantly improved; the mean error reducing from 14.8 to 3.8\%. The predictions are also improved for other mass ratios for which PIV experiments were not performed.} 
+%Thus, the wake decay model may be regarded acceptable for a wide range of Reynolds numbers of oscillating pendulums in viscous fluids.}
+
+
+
+\textcolor{black}{Even with the wake history force included, the current model is still quite basic. In reality, the dynamics is highly nonlinear, with changes in direction, curvilinear trajectories and wide variations in instantaneous Re. Under such conditions, exact analytical expressions for the drag, added mass and history forces are not available.
+Fully resolved direct numerical simulations~(Immersed boundary~\citep{mittal2005immersed}, or Physalis~\citep{naso2010interaction}) can provide better insights into the flow-induced forces. 
+On a different note, the present experiments have shown the importance of fluid drag for a bluff body oscillating in a fluid. An interesting extension to the study would be to use a more streamlined body, for which the nonlinear drag would be less dominant. In the absence of major flow separations, we can expect the frequency and dynamics to conform slightly better with a potential flow based added mass.}
+
+We thank D. Lohse, C. Sun, A. Pandey and S. Maheshwari for fruitful discussions. We thank G.-W. Bruggert, M. Bos and D. van Gils for technical support. 
+V.M. acknowledges funding from the Netherlands Organisation for Scientific Research NWO, and European Cooperation in Science and Technology, Eu-COST action MP1305.
+
+\vspace{- .5 cm}
+\bibliographystyle{jfm}
+% Note the spaces between the initials
+\bibliography{literatur_me_old.bib}
+
+\end{document}

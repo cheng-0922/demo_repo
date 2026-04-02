@@ -33,5 +33,55 @@
 \setCJKmainfont{標楷體}
 \begin{document}
 hello world
+這是一個非常有深度的物理探討，能夠將大學普物實驗的層次直接拉高到流體力學與非線性動力學的級別。將「附加質量（Added Mass）」納入考量，是你們這份實驗預報要在競賽中脫穎而出的絕對關鍵。
+
+以下為你整理可用於 Overleaf 的 LaTeX 推導過程，以及能為報告增加學術權威性的參考文獻。
+
+---
+
+
+
+對於一個在理想流體中平移的理想球體，流體力學（勢流理論）嚴格證明其附加質量為排開流體質量的一半：
+$$m_a = C_m \rho_w V$$
+其中 $C_m$ 為附加質量係數（對於球體 $C_m = 0.5$），$\rho_w$ 為流體（水）密度，$V$ 為球體體積。
+
+
+
+---
+
+### 二、 包含附加質量的運動方程式推導 (LaTeX Code)
+
+以下推導假設擺錘為完美球體，並處於小角度擺動狀態。
+
+**1. 建立受力模型**
+單擺在水中受到的力包含：
+* **有效重力 (包含浮力修正)：** $W_{eff} = (\rho - \rho_w)Vg$
+* **黏滯阻尼力：** 假設為線性阻尼 $F_d = -b v = -b L \dot{\theta}$
+* **附加質量慣性力：** $F_a = -m_a a = -C_m \rho_w V L \ddot{\theta}$
+
+**2. 建立力矩方程式**
+根據牛頓第二運動定律的轉動形式 $\sum \tau = I_0 \ddot{\theta}$，其中本體慣性矩 $I_0 = m L^2 = \rho V L^2$（假設擺線質量不計且視為質點擺）：
+$$- (\rho - \rho_w) V g L \sin\theta - b L^2 \dot{\theta} - C_m \rho_w V L^2 \ddot{\theta} = \rho V L^2 \ddot{\theta}$$
+
+**3. 整理為標準微分方程**
+將與加速度 $\ddot{\theta}$ 相關的項移至同一側，合併「真實質量」與「附加質量」：
+$$(\rho V + C_m \rho_w V) L^2 \ddot{\theta} + b L^2 \dot{\theta} + (\rho - \rho_w) V g L \sin\theta = 0$$
+
+兩邊同除以 $V L^2$ 並使用小角度近似 $\sin\theta \approx \theta$：
+$$(\rho + C_m \rho_w) \ddot{\theta} + \frac{b}{V} \dot{\theta} + \frac{(\rho - \rho_w)g}{L} \theta = 0$$
+
+將其化為標準的阻尼震盪方程形式 $\ddot{\theta} + 2\gamma \dot{\theta} + \omega_0'^2 \theta = 0$：
+$$\ddot{\theta} + \frac{b}{V(\rho + C_m \rho_w)} \dot{\theta} + \frac{(\rho - \rho_w)g}{(\rho + C_m \rho_w)L} \theta = 0$$
+
+**4. 頻率與週期的最終解**
+從上式可知，系統在水中的**無阻尼自然角頻率** $\omega_0'$ 為：
+$$\omega_0' = \sqrt{ \frac{(\rho - \rho_w)g}{(\rho + C_m \rho_w)L} }$$
+
+若電機系的同學從感測器中測得阻尼常數 $\gamma = \frac{b}{2V(\rho + C_m \rho_w)}$，則實際觀測到的**受阻尼擺動角頻率** $\omega_d$ 為：
+$$\omega_d = \sqrt{\omega_0'^2 - \gamma^2}$$
+
+在低黏滯流體（如水）且阻尼不大的假設下 ($\gamma \ll \omega_0'$)，水中的擺動週期 $T_{water}$ 近似為：
+$$T_{water} \approx \frac{2\pi}{\omega_0'} = 2\pi \sqrt{ \frac{(\rho + C_m \rho_w)L}{(\rho - \rho_w)g} }$$
+
 
 \end{document}
