@@ -82,5 +82,56 @@ $$\omega_d = \sqrt{\omega_0'^2 - \gamma^2}$$
 在低黏滯流體（如水）且阻尼不大的假設下 ($\gamma \ll \omega_0'$)，水中的擺動週期 $T_{water}$ 近似為：
 $$T_{water} \approx \frac{2\pi}{\omega_0'} = 2\pi \sqrt{ \frac{(\rho + C_m \rho_w)L}{(\rho - \rho_w)g} }$$
 
+---
 
+1. 測量原理敘述 (Measurement Principle)
+
+在確認了流體附加質量的理論存在後，本實驗的核心目標之一，便是透過實際的動力學觀測，反推並驗證球體在水中的附加質量係數 $C_m$（理論預測值為 $0.5$）。
+
+由於附加質量無法透過靜態秤重測得，我們必須依賴它對「系統慣性」的改變來進行動態測量。具體而言，附加質量會使得擺動系統的等效慣性質量增加，進而導致擺動週期的延長。因此，透過比較擺錘在「空氣中」與「流體中」的微小週期差異，並引入阻尼修正，我們即可精確反推出 $C_m$ 的實驗值。
+
+2. 理想無阻尼近似下的 $C_m$ 推導 (Ideal Undamped Approximation)
+
+首先考慮最基礎的情況（忽略流體黏滯性造成的週期偏移）。
+在空氣中（假設空氣密度 $\rho_{air} \approx 0$，附加質量效應忽略不計），單擺的自然角頻率 $\omega_{air}$ 與週期 $T_{air}$ 的關係為：
+$$\omega_{air}^2 = \frac{g}{L} = \left( \frac{2\pi}{T_{air}} \right)^2$$
+
+在水中，根據我們前述的動力學方程式，系統的無阻尼自然角頻率 $\omega_0'$ 為：
+$$\omega_0'^2 = \frac{(\rho - \rho_w)g}{(\rho + C_m \rho_w)L}$$
+
+將兩式相除，消去幾何常數 $g$ 與 $L$，我們可以得到空氣與水中頻率平方的無量綱比值：
+$$\frac{\omega_{air}^2}{\omega_0'^2} = \frac{\rho + C_m \rho_w}{\rho - \rho_w}$$
+
+假設流體阻尼極小，可以直接用測量到的週期 $T_{water}$ 近似 $2\pi/\omega_0'$，則上式可寫為週期的平方比：
+$$\left( \frac{T_{water}}{T_{air}} \right)^2 = \frac{\rho + C_m \rho_w}{\rho - \rho_w}$$
+
+經過代數移項，將待測目標 $C_m$ 獨立於等式左側，即可得到基礎測量公式：
+$$C_m = \left( \frac{\rho}{\rho_w} \right) \left[ \left( \frac{T_{water}}{T_{air}} \right)^2 - 1 \right] - \left( \frac{T_{water}}{T_{air}} \right)^2$$
+
+> **物理意義詮釋：** 此公式表明，只要我們知道擺錘的密度 $\rho$ 與水的密度 $\rho_w$，並透過感測器精準量測同一個擺錘在空氣中與水中的週期比 $(T_{water}/T_{air})$，就能直接計算出 $C_m$。
+
+3. 高精度阻尼修正模型 (High-Precision Model with Damping Correction)
+
+上述的基礎公式雖然直觀，但在真實的流體實驗中，水的黏滯阻尼（Viscous Damping）不僅會造成振幅衰減，更會**拉長觀測到的震盪週期**。若不將此效應扣除，算出的 $C_m$ 將包含極大的系統誤差。這是本團隊結合訊號處理技術的關鍵突破點。
+
+單擺在水中的運動軌跡為受阻尼震盪：
+$$\theta(t) = \theta_0 e^{-\gamma t} \cos(\omega_d t + \phi)$$
+
+其中，感測器實際測量到的「受阻尼角頻率」為 $\omega_d = 2\pi / T_{water}$。
+根據阻尼震盪理論，無阻尼自然角頻率 $\omega_0'$、受阻尼角頻率 $\omega_d$ 與衰減係數 $\gamma$ 之間的幾何關係為：
+$$\omega_0'^2 = \omega_d^2 + \gamma^2$$
+
+將此嚴格的 $\omega_0'^2$ 代回頻率比公式：
+$$\frac{\omega_{air}^2}{\omega_d^2 + \gamma^2} = \frac{\rho + C_m \rho_w}{\rho - \rho_w}$$
+
+再次進行代數移項，我們得到**最終的 $C_m$ 精確測量方程式**：
+$$C_m = \frac{\rho}{\rho_w} \left( \frac{\omega_{air}^2}{\omega_d^2 + \gamma^2} - 1 \right) - \frac{\omega_{air}^2}{\omega_d^2 + \gamma^2}$$
+
+ 4. 實驗數據擷取策略 (Experimental Data Acquisition Strategy)
+
+為了使用上述的高精度方程式，實驗數據的處理流程如下：
+1. **空氣基準測量：** 量測空氣中的擺動週期 $T_{air}$，求得基準頻率 $\omega_{air} = 2\pi / T_{air}$。
+2. **包絡線擬合 (Envelope Fitting)：** 將水中擺動的感測器數據輸入至 Python 進行訊號處理。透過擷取波峰值，利用指數衰減函數 $\theta_{peak}(t) = \theta_0 e^{-\gamma t}$ 進行非線性曲線擬合 (Curve Fitting)，精確提取衰減係數 $\gamma$。
+3. **頻率提取：** 對波形進行快速傅立葉變換 (FFT) 或透過過零點檢測 (Zero-crossing detection)，取得精確的受阻尼角頻率 $\omega_d$。
+4. **驗證與比對：** 將取得的參數代入精確測量方程式計算 $C_m$，並與勢流理論預測的理論值 $0.5$ 進行誤差分析。我們可進一步改變擺錘材質（改變 $\rho$），繪製 $\frac{\omega_{air}^2}{\omega_d^2 + \gamma^2}$ 對 $\frac{\rho}{\rho-\rho_w}$ 的關係圖，透過線性迴歸的斜率與截距來驗證模型的普適性。
 \end{document}
