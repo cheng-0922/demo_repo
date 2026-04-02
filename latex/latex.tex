@@ -18,6 +18,7 @@
 \usepackage{enumitem}
 \usepackage{extarrows}
 \usepackage{bm}
+\usepackage{framed}
 \setlength{\jot}{6pt}
 %\setlist[enumerate,1]{label=(\arabic)}
 \newCJKfontfamily\CJKrm{標楷體}
@@ -34,90 +35,72 @@
 \begin{document}
 
 \begin{center}
-
     \begin{minipage}{0.65\textwidth}
         \centering
         {\Large \bfseries 第15屆普通物理實驗創意設計競賽}\\[0.2cm]
         {\Large \bfseries 實驗摘要}
     \end{minipage}
-
 \end{center}
-
 \vspace{0.5cm}
-
-% 隊伍與作品名稱表格
-\begin{tabularx}{\textwidth}{|p{2.5cm}|Y|}
+\begin{spacing}{2}
+\noindent\begin{tabularx}{\linewidth}{|@{}>{\centering\arraybackslash}p{5cm}|Y|}
     \hline
-    \rule{0pt}{25pt} 隊伍名稱 & （） \\ \hline
-    \rule{0pt}{25pt} 作品名稱 & 利用水中擺探討液體中的附加質量
-\\ \hline
+    隊伍名稱 & 隊名搖擺不定隊 \\ 
+    \hline
+    作品名稱 & 利用水中擺探討液體中的附加質量\\ 
+    \hline
 \end{tabularx}
-
-\vspace{0.5cm}
-
-\begin{tabularx}{\textwidth}{|X|}
-
-\begin{spacing}{1.3}
+\end{spacing}
+\vspace{-0.75cm}
+\begin{spacing}{1.5}
+\begin{framed}
 \section{原理}
-\subsection{理想流體中運動推導}對於一個在理想流體中平移的理想球體，其附加質量為排開流體質量的一半：
-$$m_a = C_m \rho_w V$$
-其中 $C_m$ 為附加質量係數（對於球體 $C_m = 0.5$），$\rho_w$ 為流體（水）密度，$V$ 為體積。
-
-以下推導假設擺錘處於小角度擺動狀態。
-
+\subsection{理想流體中運動推導}
+\qquad 對於一個在理想流體中平移的理想球體，其附加質量為排開流體質量的一半：
+$$m_\text{a} = C_\text{m} \rho_\text{w} V$$
+其中 $C_\text{m}$ 為附加質量係數(對於球體 $C_\text{m} = 0.5$)，$\rho_\text{w}$ 為流體(水)密度，$V$ 為體積。以下推導假設擺錘處於小角度擺動狀態。
 \[
 \text{單擺在水中受到的力包含：}
 \begin{cases}
- &\text{有效重力 (包含浮力修正)：} W_{eff} = (\rho - \rho_w)Vg \\
+ &\text{有效重力 (包含浮力修正)：} W_{\text{eff}} = (\rho - \rho_w)Vg \\
  &\text{黏滯阻尼力： 假設為線性阻尼 }F_d = -b v = -b L \dot{\theta}\\
- &\text{附加質量慣性力：} F_a = -m_a a = -C_m \rho_w V L \ddot{\theta}\\
+ &\text{附加質量慣性力：} F_a = -m_a a = -C_\text{m} \rho_\text{w} V L \ddot{\theta}\\
 \end{cases}
 \]
 根據牛頓第二運動定律的轉動形式 $\sum \tau = I_0 \ddot{\theta}$，其中轉動慣量 $I_0 = m L^2 = \rho V L^2$（假設擺線質量不計且視為質點擺）：
-
-$$- (\rho - \rho_w) V g L \sin\theta - b L^2 \dot{\theta} - C_m \rho_w V L^2 \ddot{\theta} = \rho V L^2 \ddot{\theta}$$
-
-
+$$- (\rho - \rho_w) V g L \sin\theta - b L^2 \dot{\theta} - C_\text{m} \rho_\text{w} V L^2 \ddot{\theta} = \rho V L^2 \ddot{\theta}$$
 將與角加速度 $\ddot{\theta}$ 相關的項移至同一側，合併「真實質量」與「附加質量」：
-$$(\rho V + C_m \rho_w V) L^2 \ddot{\theta} + b L^2 \dot{\theta} + (\rho - \rho_w) V g L \sin\theta = 0$$
-
+$$(\rho V + C_\text{m} \rho_\text{w} V) L^2 \ddot{\theta} + b L^2 \dot{\theta} + (\rho - \rho_w) V g L \sin\theta = 0$$
 兩邊同除以 $V L^2$ 並使用小角度近似 $\sin\theta \approx \theta$：
-$$(\rho + C_m \rho_w) \ddot{\theta} + \frac{b}{V} \dot{\theta} + \frac{(\rho - \rho_w)g}{L} \theta = 0$$
-
+$$(\rho + C_\text{m} \rho_\text{w}) \ddot{\theta} + \frac{b}{V} \dot{\theta} + \frac{(\rho - \rho_w)g}{L} \theta = 0$$
 將其化為標準的阻尼震盪方程形式 $\ddot{\theta} + 2\gamma \dot{\theta} + \omega_0'^2 \theta = 0$：
-$$\ddot{\theta} + \frac{b}{V(\rho + C_m \rho_w)} \dot{\theta} + \frac{(\rho - \rho_w)g}{(\rho + C_m \rho_w)L} \theta = 0$$
-
+$$\ddot{\theta} + \frac{b}{V(\rho + C_\text{m} \rho_\text{w})} \dot{\theta} + \frac{(\rho - \rho_\text{w})g}{(\rho + C_\text{m} \rho_\text{w})L} \theta = 0$$
 從上式可知，系統在水中的無阻尼自然角頻率 $\omega_0'$ 為：
-$$\omega_0' = \sqrt{ \frac{(\rho - \rho_w)g}{(\rho + C_m \rho_w)L} }$$
-
-若測得阻尼常數 $\gamma = \frac{b}{2V(\rho + C_m \rho_w)}$，則實際觀測到的受阻尼擺動角頻率 $\omega_d$ 為：
+$$\omega_0' = \sqrt{ \frac{(\rho - \rho_\text{w})g}{(\rho + C_\text{m} \rho_\text{w})L} }$$
+若測得阻尼常數 $\gamma = \dfrac{b}{2V(\rho + C_\text{m} \rho_\text{w})}$，則實際觀測到的受阻尼擺動角頻率 $\omega_d$ 為：
 $$\omega_d = \sqrt{\omega_0'^2 - \gamma^2}$$
-
 在低黏滯流體（如水）且阻尼不大的假設下 ($\gamma \ll \omega_0'$)，水中的擺動週期 $T_{\text{water}}$ 近似為：
-$$T_{\text{water}} \approx \frac{2\pi}{\omega_0'} = 2\pi \sqrt{ \frac{(\rho + C_m \rho_w)L}{(\rho - \rho_w)g} }$$
+$$T_{\text{water}} \approx \frac{2\pi}{\omega_0'} = 2\pi \sqrt{ \frac{(\rho + C_\text{m} \rho_\text{w})L}{(\rho - \rho_\text{w})g} }$$
 
-\subsection{理想無阻尼近似下的 $C_m$ 推導 (Ideal Undamped Approximation)}
-
+\subsection{理想無阻尼近似下的\texorpdfstring{$C_\text{m}$}{}推導(Ideal Undamped Approximation)}
 考慮最基礎的情況（忽略流體黏滯性造成的週期偏移）。
 在空氣中（假設空氣密度 $\rho_{\text{air}} \approx 0$，附加質量效應忽略不計），單擺週期 為：
 $$T_{\text{air}}=2\pi \sqrt{\frac{L}{g}}$$
 假設流體阻尼極小，可由週期的平方比表示：
-$$T^2_{\text{water}}= \frac{\rho + C_m \rho_w}{\rho - \rho_w}T^2_{\text{air}}$$
-
-%經過代數移項，將待測目標 $C_m$ 獨立於等式左側，即可得到基礎測量公式：
-%$$C_m = \left( \frac{\rho}{\rho_w} \right) \left[ \left( \frac{T_{\text{water}}}{T_{\text{air}}} \right)^2 - 1 \right] - \left( \frac{T_{\text{water}}}{T_{\text{air}}} \right)^2$$
-
-由於擺錘的密度 $\rho$ 與水的密度 $\rho_w$已知，量測同一個擺錘在空氣中與水中的週期 $(T_{\text{water}}$、$T_{\text{air}})$，取其線性回歸斜率，就能直接計算出 $C_m$，並可與已知物理模型比較與驗證。
+$$T^2_{\text{water}}= \frac{\rho + C_\text{m} \rho_\text{w}}{\rho - \rho_\text{w}}\;T^2_{\text{air}}$$
+%經過代數移項，將待測目標 $C_\text{m}$ 獨立於等式左側，即可得到基礎測量公式：
+%$$C_\text{m} = \left( \frac{\rho}{\rho_w} \right) \left[ \left( \frac{T_{\text{water}}}{T_{\text{air}}} \right)^2 - 1 \right] - \left( \frac{T_{\text{water}}}{T_{\text{air}}} \right)^2$$
+由於擺錘的密度 $\rho$ 與水的密度 $\rho_\text{w}$已知，量測同一個擺錘在空氣中與水中的週期 $(T_{\text{water}}$、$T_{\text{air}})$，取其線性回歸斜率，就能直接計算出 $C_\text{m}$，並可與已知物理模型比較與驗證。
 
 \section{實驗方法}
 \begin{enumerate}
 \item 本實驗使用細釣魚線連接形狀不同之擺錘，進行單擺週期與幅的測量。為了方便記錄，實驗中會使用光源使擺錘投影到紙上紀錄位置與使用碼錶記錄過中心點及在振幅時的時間。
 \item 在空氣中進行單擺實驗，以電磁鐵磁力吸引擺錘，固定單擺初始角度於小角度，作為不同擺長的對照組，將電源切斷後使單擺下落，記錄單擺擺動週期及振幅。
 \item 將單擺置入水中，以電磁鐵磁力吸引擺錘，以固定單擺初始角度於小角度，將電源切斷後使單擺下落，記錄單擺擺動週期及振幅。
-\item 分別以球體、圓柱體、正方體作為擺錘，再改變擺長，觀察週期變化。作圖，取其線性回歸斜率$ \frac{\rho + C_m \rho_w}{\rho - \rho_w}$，由已知密度推算出$C_m$，與理論值比較。
+\item 分別以球體、圓柱體、正方體作為擺錘，再改變擺長，觀察週期變化。作圖，取其線性回歸斜率$ \frac{\rho + C_\text{m} \rho_\text{w}}{\rho - \rho_w}$，由已知密度推算出$C_\text{m}$，與理論值比較。
 \end{enumerate}
 \section{預期結果}
 本實驗預計能求出球體、圓柱體及正方體三種不同形狀擺錘在水中做單擺運動時，周圍水體造成的附加質量。在水中單擺受黏滯力影響，阻尼現象較明顯，振幅可能會快速的衰減。且實際週期應較理想無阻尼情況稍大，可能會使實驗得出的附加質量略微大於實際附加質量。
+\end{framed}
 \end{spacing}
-\end{tabularx}
 \end{document}
