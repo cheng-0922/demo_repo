@@ -35,22 +35,21 @@
 
 原理:
 \\
-對於一個在理想流體中平移的理想球體，流體力學（勢流理論）嚴格證明其附加質量為排開流體質量的一半：
+1.對於一個在理想流體中平移的理想球體，其附加質量為排開流體質量的一半：
 $$m_a = C_m \rho_w V$$
 其中 $C_m$ 為附加質量係數（對於球體 $C_m = 0.5$），$\rho_w$ 為流體（水）密度，$V$ 為體積。
 
-以下推導假設擺錘為完美球體，並處於小角度擺動狀態。
+以下推導假設擺錘處於小角度擺動狀態。
 
-單擺在水中受到的力包含：
- 有效重力 (包含浮力修正)： $W_{eff} = (\rho - \rho_w)Vg$
- 黏滯阻尼力： 假設為線性阻尼 $F_d = -b v = -b L \dot{\theta}$
- 附加質量慣性力： $F_a = -m_a a = -C_m \rho_w V L \ddot{\theta}$
-
-根據牛頓第二運動定律的轉動形式 $\sum \tau = I_0 \ddot{\theta}$，其中本體慣性矩 $I_0 = m L^2 = \rho V L^2$（假設擺線質量不計且視為質點擺）：
+單擺在水中受到的力包含：\\
+ 有效重力 (包含浮力修正)： $W_{eff} = (\rho - \rho_w)Vg$ \\
+ 黏滯阻尼力： 假設為線性阻尼 $F_d = -b v = -b L \dot{\theta}$\\
+ 附加質量慣性力： $F_a = -m_a a = -C_m \rho_w V L \ddot{\theta}$\\
+根據牛頓第二運動定律的轉動形式 $\sum \tau = I_0 \ddot{\theta}$，其中轉動慣量 $I_0 = m L^2 = \rho V L^2$（假設擺線質量不計且視為質點擺）：
 $$- (\rho - \rho_w) V g L \sin\theta - b L^2 \dot{\theta} - C_m \rho_w V L^2 \ddot{\theta} = \rho V L^2 \ddot{\theta}$$
 
 
-將與加速度 $\ddot{\theta}$ 相關的項移至同一側，合併「真實質量」與「附加質量」：
+將與角加速度 $\ddot{\theta}$ 相關的項移至同一側，合併「真實質量」與「附加質量」：
 $$(\rho V + C_m \rho_w V) L^2 \ddot{\theta} + b L^2 \dot{\theta} + (\rho - \rho_w) V g L \sin\theta = 0$$
 
 兩邊同除以 $V L^2$ 並使用小角度近似 $\sin\theta \approx \theta$：
@@ -68,30 +67,35 @@ $$\omega_d = \sqrt{\omega_0'^2 - \gamma^2}$$
 在低黏滯流體（如水）且阻尼不大的假設下 ($\gamma \ll \omega_0'$)，水中的擺動週期 $T_{water}$ 近似為：
 $$T_{water} \approx \frac{2\pi}{\omega_0'} = 2\pi \sqrt{ \frac{(\rho + C_m \rho_w)L}{(\rho - \rho_w)g} }$$
 
----
-
-
 
 2. 理想無阻尼近似下的 $C_m$ 推導 (Ideal Undamped Approximation)
 
 首先考慮最基礎的情況（忽略流體黏滯性造成的週期偏移）。
 在空氣中（假設空氣密度 $\rho_{air} \approx 0$，附加質量效應忽略不計），單擺的自然角頻率 $\omega_{air}$ 與週期 $T_{air}$ 的關係為：
-$$\omega_{air}^2 = \frac{g}{L} = \left( \frac{2\pi}{T_{air}} \right)^2$$
+$$T_{air}=2\pi \sqrt{\frac{L}{g}}$$
 
-在水中，根據我們前述的動力學方程式，系統的無阻尼自然角頻率 $\omega_0'$ 為：
-$$\omega_0'^2 = \frac{(\rho - \rho_w)g}{(\rho + C_m \rho_w)L}$$
-
-將兩式相除，消去幾何常數 $g$ 與 $L$，我們可以得到空氣與水中頻率平方的無量綱比值：
-$$\frac{\omega_{air}^2}{\omega_0'^2} = \frac{\rho + C_m \rho_w}{\rho - \rho_w}$$
 
 假設流體阻尼極小，可以直接用測量到的週期 $T_{water}$ 近似 $2\pi/\omega_0'$，則上式可寫為週期的平方比：
 $$\left( \frac{T_{water}}{T_{air}} \right)^2 = \frac{\rho + C_m \rho_w}{\rho - \rho_w}$$
 
-經過代數移項，將待測目標 $C_m$ 獨立於等式左側，即可得到基礎測量公式：
-$$C_m = \left( \frac{\rho}{\rho_w} \right) \left[ \left( \frac{T_{water}}{T_{air}} \right)^2 - 1 \right] - \left( \frac{T_{water}}{T_{air}} \right)^2$$
+%經過代數移項，將待測目標 $C_m$ 獨立於等式左側，即可得到基礎測量公式：
+%$$C_m = \left( \frac{\rho}{\rho_w} \right) \left[ \left( \frac{T_{water}}{T_{air}} \right)^2 - 1 \right] - \left( \frac{T_{water}}{T_{air}} \right)^2$$
 
-> 物理意義詮釋：此公式表明，只要我們知道擺錘的密度 $\rho$ 與水的密度 $\rho_w$，並透過感測器精準量測同一個擺錘在空氣中與水中的週期比 $(T_{water}/T_{air})$，就能直接計算出 $C_m$。
+由於擺錘的密度 $\rho$ 與水的密度 $\rho_w$已知，量測同一個擺錘在空氣中與水中的週期 $(T_{water}$、$T_{air})$，取其線性回歸斜率，就能直接計算出 $C_m$，並可與已知物理模型比較與驗證。
 
+實驗方法：
+ \begin{enumerate}
+  \item item 1
+  \item item 2
+  \item item 3
+\end{enumerate}
+\item 本實驗使用細釣魚線連接形狀不同之擺錘，進行單擺週期與幅的測量。為了方便記錄，實驗中會使用光源使擺錘投影到紙上紀錄位置與使用碼錶記錄過中心點及在振幅時的時間。
+\item 在空氣中進行單擺實驗，以電磁鐵磁力吸引擺錘，固定單擺初始角度於小角度，作為不同擺長的對照組，將電源切斷後使單擺下落，記錄單擺擺動週期及振幅。
+\item 將單擺置入水中，以電磁鐵磁力吸引擺錘，以固定單擺初始角度於小角度，將電源切斷後使單擺下落，記錄單擺擺動週期及振幅。
+\item 分別以球體、圓柱體、正方體作為擺錘，再改變擺長，觀察週期變化。作圖，取其線性回歸斜率$ \frac{\rho + C_m \rho_w}{\rho - \rho_w}$，由已知密度推算出$C_m$，與理論值比較。
 
-4. 驗證與比對：將取得的參數代入精確測量方程式計算 $C_m$，並與勢流理論預測的理論值 $0.5$ 進行誤差分析。我們可進一步改變擺錘材質（改變 $\rho$），繪製 $\frac{\omega_{air}^2}{\omega_d^2 + \gamma^2}$ 對 $\frac{\rho}{\rho-\rho_w}$ 的關係圖，透過線性迴歸的斜率與截距來驗證模型的普適性。
+預期結果：
+\\
+本實驗預計能求出球體、圓柱體及正方體三種不同形狀擺錘在水中做單擺運動時，周圍水體造成的附加質量。在水中單擺受黏滯力影響，阻尼現象較明顯，振幅可能會快速的衰減。且實際週期應較理想無阻尼情況稍大，可能會使實驗得出的附加質量略微大於實際附加質量。
+\\
 \end{document}
